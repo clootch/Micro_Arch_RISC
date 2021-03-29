@@ -1,98 +1,60 @@
-module register_file(
-	input AA[4:0],
-	input BA[4:0],
-	input DA[4:0],
+module Register_File(
+	input[4:0] AA,
+	input[4:0] BA,
+	input[4:0] DA,
 	input RW,
 	input clk,
-	input D[31:0],
-	output A[31:0],
-	output B[31:0]
+	input[31:0] D,
+	output[31:0] A,
+	output[31:0] B
 );
 	//All the necessary registers.
-	reg registers[31:0][31:0];
-	/*
-	reg r0[31:0];
-	reg r1[31:0];
-	reg r2[31:0];
-	reg r3[31:0];
-	reg r4[31:0];
-	reg r5[31:0];
-	reg r6[31:0];
-	reg r7[31:0];
-	reg r8[31:0];
-	reg r9[31:0];
-	reg r10[31:0];
-	reg r11[31:0];
-	reg r12[31:0];
-	reg r13[31:0];
-	reg r14[31:0];
-	reg r15[31:0];
-	reg r16[31:0];
-	reg r17[31:0];
-	reg r18[31:0];
-	reg r19[31:0];
-	reg r20[31:0];
-	reg r21[31:0];
-	reg r22[31:0];
-	reg r23[31:0];
-	reg r24[31:0];
-	reg r25[31:0];
-	reg r26[31:0];
-	reg r27[31:0];
-	reg r28[31:0];
-	reg r29[31:0];
-	reg r30[31:0];
-	reg r31[31:0];*/
+	reg registers[31:0];
 	reg addrA;
 	reg addrB;
 	//Now to do the real work here.
 	initial begin
-	/*
-		r0 = 0;
-		r1 = 0;
-		r2 = 0;
-		r3 = 0;
-		r4 = 0;
-		r5 = 0;
-		r6 = 0;
-		r7 = 0;
-		r8 = 0;
-		r9 = 0;
-		r10 = 0;
-		r11 = 0;
-		r12 = 0;
-		r13 = 0;
-		r14 = 0;
-		r15 = 0;
-		r16 = 0;
-		r17 = 0;
-		r18 = 0;
-		r19 = 0;
-		r20 = 0;
-		r21 = 0;
-		r22 = 0;
-		r23 = 0;
-		r24 = 0;
-		r25 = 0;
-		r26 = 0;
-		r27 = 0;
-		r28 = 0;
-		r29 = 0;
-		r30 = 0;
-		r31 = 0;
-		*/
-	for (int i = 0;i<=31;i++)
-		begin
-			//This might work. Im not exactly sure.
-			registers[i] = i[31:0];
-		end
+	registers[0] = 32'b0;
+	registers[1] = 32'b11100;
+	registers[2] = 32'b0;
+	registers[3] = 32'b0;
+	registers[4] = 32'b0;
+	registers[5] = 32'b0;
+	registers[6] = 32'b0;
+	registers[7] = 32'b0;
+	registers[8] = 32'b0;
+	registers[9] = 32'b0;
+	registers[10] = 32'b0;
+	registers[11] = 32'b0;
+	registers[12] = 32'b0;
+	registers[13] = 32'b0;
+	registers[14] = 32'b0;
+	registers[15] = 32'b0;
+	registers[16] = 32'b0;
+	registers[17] = 32'b0;
+	registers[18] = 32'b0;
+	registers[19] = 32'b0;
+	registers[20] = 32'b0;
+	registers[21] = 32'b0;
+	registers[22] = 32'b0;
+	registers[23] = 32'b0;
+	registers[24] = 32'b0;
+	registers[25] = 32'b0;
+	registers[26] = 32'b0;
+	registers[27] = 32'b0;
+	registers[28] = 32'b0;
+	registers[29] = 32'b0;
+	registers[30] = 32'b0;
+	registers[31] = 32'b0;
 	end
-	assign addrA = AA;
-	assign addrB = BA;
+	
+	
 	assign A = registers[addrA];
 	assign B = registers[addrB];
 	always @ (negedge clk)
 	begin
+	   addrA = AA;
+	   addrB = BA;
 		if(RW)
 		begin
 			registers[DA] = D;

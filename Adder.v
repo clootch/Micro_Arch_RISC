@@ -1,7 +1,7 @@
 module Adder(
-	input PC[31:0],
-	input B[31:0],
-	output BrA[31:0]
+	input[31:0] PC,
+	input[31:0] B,
+	output[31:0] BrA
 );
 	assign BrA = PC + B;
 endmodule

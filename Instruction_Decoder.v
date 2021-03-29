@@ -1,16 +1,16 @@
 module Instuction_Decoder(
 	input [31:0] instruction,
-	output opcode[6:0],
+	output[6:0] opcode,
 	output RW,
-	output MD[1:0],
-	output BS[1:0],
+	output[1:0] MD,
+	output[1:0] BS,
 	output PS,
 	output MW,
-	output FS[4:0],
+	output[4:0] FS,
 	output MA,
 	output MB,
-	output AA[4:0],
-	output BA[4:0],
+	output[4:0] AA,
+	output[4:0] BA,
 	output CS
 	//Not 100% sure about what goes where.
 );

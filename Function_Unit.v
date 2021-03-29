@@ -3,26 +3,27 @@ module Function_Unit(
 	input[31:0] B,
 	input[4:0] SH,
 	input[4:0] FS,
-	output Z,
-	output N,
-	output V,
-	output C,
-	output[31:0] F 
+	output reg Z,
+	output reg N,
+	output reg V,
+	output reg C,
+	output reg[31:0] F 
 );
 
 always @(*)
 begin
 	case(FS)
-		case 5'b00000: F = A;
-		case 5'b00010: {C,F} = {1'b0,A} + {1'b0,B};
-		case 5'b00101: {C,F} = {1'b0,A} + {1'b0,B} + 1; //Need a special case here (Refer to Table 10-20)
-		case 5'b01000: F = A && B;
-		case 5'b01010: F = A || B;
-		case 5'b01100: F = A ^ B;
-		case 5'b01110: F = A;
-		case 5'b00111: {C,F} = {1'b0,A} + 1;
-		case 5'b10000: //shifty stuff here :)
-		case 5'b10001: //shifty stuff here :)
+		5'b00000: F = A;
+		5'b00010: {C,F} = {1'b0,A} + {1'b0,B};
+		5'b00101: {C,F} = {1'b0,A} + {1'b0,B} + 1; //Need a special case here (Refer to Table 10-20)
+		5'b01000: F = A && B;
+		5'b01010: F = A || B;
+		5'b01100: F = A ^ B;
+		5'b01110: F = A;
+		5'b00111: {C,F} = {1'b0,A} + 1;
+		5'b10000: F = A; //shifty stuff here
+		5'b10001: F = A; //shifty stuff here
+		default: F = A;
 	endcase
 	//Zero
 	if (F == 0)
@@ -38,7 +39,7 @@ begin
 	//Negative 
 	if(F[31] == 1)
 	begin
-		N = 1;
+		N = F[31];
 	end
 	//Need to do carry
 end
