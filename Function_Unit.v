@@ -9,7 +9,9 @@ module Function_Unit(
 	output reg C,
 	output reg[31:0] F 
 );
-
+reg[31:0] shiftOut;
+Shifter shiftyboi(
+.SH(SH),.A(A),.shiftOut(F));
 always @(*)
 begin
 	case(FS)
@@ -41,6 +43,5 @@ begin
 	begin
 		N = F[31];
 	end
-	//Need to do carry
 end
 endmodule

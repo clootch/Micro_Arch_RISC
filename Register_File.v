@@ -9,9 +9,9 @@ module Register_File(
 	output[31:0] B
 );
 	//All the necessary registers.
-	reg registers[31:0];
-	reg addrA;
-	reg addrB;
+	reg[31:0] registers[31:0];
+	reg[4:0] addrA;
+	reg[4:0] addrB;
 	//Now to do the real work here.
 	initial begin
 	registers[0] = 32'b0;
@@ -57,7 +57,7 @@ module Register_File(
 	   addrB = BA;
 		if(RW)
 		begin
-			registers[DA] = D;
+			registers[DA][31:0] = D;
 		end
 	end
 endmodule
