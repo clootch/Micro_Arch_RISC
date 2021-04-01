@@ -21,15 +21,11 @@ module Register_File(
 	end
 	
 	
-	assign A = registers[addrA];
-	assign B = registers[addrB];
-	always @ (negedge clk)
-	begin
-	   addrA = AA;
-	   addrB = BA;
-		if(RW)
-		begin
-			registers[DA][31:0] = D;
-		end
+	assign A = registers[AA];
+	assign B = registers[BA];
+	
+	always @ (posedge clk) begin
+	   if(RW)
+			registers[DA] = D;
 	end
 endmodule
