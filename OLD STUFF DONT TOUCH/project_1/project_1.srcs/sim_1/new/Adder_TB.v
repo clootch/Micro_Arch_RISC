@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 03/29/2021 11:56:35 AM
+// Create Date: 03/29/2021 11:28:35 AM
 // Design Name: 
-// Module Name: Shifter
+// Module Name: Adder_TB
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,10 +20,20 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module Shifter(
-    input[4:0] SH,
-    input[31:0] A,
-    output[31:0] F
-    );
-    assign F = A>>SH | A<<(6'd32-SH);
+module Adder_TB();
+reg[31:0] PC;
+reg [31:0] B;
+wire[31:0] BrA;
+Adder uut(
+.PC(PC),
+.B(B),
+.BrA(BrA));
+
+initial begin
+   PC = 32'd123;
+   B = 32'd5; 
+   #10;
+   PC = 32'd145;
+   B = 32'd1;
+end
 endmodule

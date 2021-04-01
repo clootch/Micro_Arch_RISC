@@ -1,5 +1,5 @@
 module Instuction_Decoder(
-	input [31:0] instruction,
+	/*input [31:0] instruction,
 	output[6:0] opcode,
 	output RW,
 	output[1:0] MD,
@@ -11,9 +11,11 @@ module Instuction_Decoder(
 	output MB,
 	output[4:0] AA,
 	output[4:0] BA,
-	output CS
+	output CS*/
+	
 	//Not 100% sure about what goes where.
 );
+//takes in opcode, decides everything based on that.
 assign opcode = instruction[31:25];
 assign RW = instruction[24];
 assign MD = instruction[23:22];
