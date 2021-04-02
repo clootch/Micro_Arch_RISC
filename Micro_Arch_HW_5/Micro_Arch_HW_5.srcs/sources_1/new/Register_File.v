@@ -20,12 +20,11 @@ module Register_File(
 	   end
 	end
 	
-	
 	assign A = registers[AA];
 	assign B = registers[BA];
 	
 	always @ (posedge clk) begin
-	   if(RW)
+	   if(RW==1 && DA!=0)
 			registers[DA] = D;
 	end
 endmodule
