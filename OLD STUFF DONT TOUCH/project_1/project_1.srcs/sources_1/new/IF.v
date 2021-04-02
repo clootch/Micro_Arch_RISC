@@ -2,6 +2,9 @@
 
 module IF(
     input PC,
-    output PrevPC
+    output PC_n1
     );
+    
+    assign PC_n1 = PC + 1; //update PC for IF time 
 endmodule
+
