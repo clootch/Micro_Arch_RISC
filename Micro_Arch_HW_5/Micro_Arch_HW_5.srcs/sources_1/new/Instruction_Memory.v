@@ -3,15 +3,16 @@
 module Instruction_Memory(
     input clk,
     input [31:0] PC,
-    output reg [6:0] opcode
+    output reg [31:0] IR
     );
     
     //Program Memory:
-    initial opcode = 0;
+    initial IR = 0;
     
     always@ (posedge clk) begin
         case (PC)
-            1: opcode = 0000010; //Add
+            //      Opcode  DR    SA   SB/Imme/offset
+            1: IR = 32'b0000010_00000_00000_00000_0000000000; //Add
         endcase
     end
     
