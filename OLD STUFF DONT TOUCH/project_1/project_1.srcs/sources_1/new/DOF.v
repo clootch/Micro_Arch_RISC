@@ -7,27 +7,26 @@ module DOF(
     output[31:0] PC_n1,
     output reg [31:0] PC_n2,
     output reg RW,
-    output reg DA,
-    output reg MD,
-    output reg BS,
+    output reg [6:0] DA, //6 bits? since its addr
+    output reg [1:0] MD,
+    output reg [1:0] BS,
     output reg PS,
     output reg MW,
-    output reg FS,
-    output reg SH,
+    output reg [4:0] FS,
+    output reg [4:0] SH,
     output reg [31:0] A,
     output reg [31:0] B
     );
     reg [14:0] IM;
     reg MA;
     reg MB;
-    reg AA;
-    reg BA;
-    reg CS;
-    Register_File Register_File();
+    reg [6:0] AA;
+    reg [6:0] BA;
+    reg  CS;
     Instruction_Decoder Instruction_Decoder();
     //assign IM = IR[14:0];    
     always @ (negedge clk) begin
-        //Do the Latch assignmtnets here :)
+        
     end
     always @ (reset)
     begin
