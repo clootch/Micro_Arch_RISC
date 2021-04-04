@@ -21,7 +21,7 @@
 
 
 module RISC_Machine(
-
+        input reset
     );
     
     //TEMPORARY, reg file needs to be passed down from top

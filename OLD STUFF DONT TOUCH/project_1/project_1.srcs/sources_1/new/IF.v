@@ -12,7 +12,7 @@ module IF(
     
     Instruction_Memory Instruction_Memory(
     .PC(PC),
-    .temp_IR(IR), 
+    .IR(temp_IR), 
     .clk(clk));
     
     always @ (negedge clk) begin

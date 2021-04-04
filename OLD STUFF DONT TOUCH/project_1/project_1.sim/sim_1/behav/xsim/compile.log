@@ -18,7 +18,7 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Github Repos/Micro_Arch_RISC/OLD
 INFO: [VRFC 10-311] analyzing module Shifter
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Github Repos/Micro_Arch_RISC/OLD STUFF DONT TOUCH/project_1/project_1.srcs/sources_1/new/EX.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module EX
-INFO: [VRFC 10-2458] undeclared symbol PC, assumed default net type wire [D:/Github Repos/Micro_Arch_RISC/OLD STUFF DONT TOUCH/project_1/project_1.srcs/sources_1/new/EX.v:26]
+INFO: [VRFC 10-2458] undeclared symbol PC, assumed default net type wire [D:/Github Repos/Micro_Arch_RISC/OLD STUFF DONT TOUCH/project_1/project_1.srcs/sources_1/new/EX.v:28]
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Github Repos/Micro_Arch_RISC/OLD STUFF DONT TOUCH/project_1/project_1.srcs/sources_1/new/WB.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module WB
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Github Repos/Micro_Arch_RISC/OLD STUFF DONT TOUCH/project_1/project_1.srcs/sources_1/new/RISC_Machine.v" into library xil_defaultlib
