@@ -35,4 +35,8 @@ module RISC_Machine(
         .
     )
     */
+    IF IF();
+    DOF DOF();
+    EX EX();
+    WB WB();
 endmodule
