@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 04/02/2021 05:37:38 PM
+// Create Date: 04/03/2021 12:36:31 PM
 // Design Name: 
-// Module Name: RISC_Machine
+// Module Name: IF_TB
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,23 +20,9 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module RISC_Machine(
+module IF_TB(
 
     );
     
-    //TEMPORARY, reg file needs to be passed down from top
-    /*
-    Register_File RF(
-        .AA(AA),
-        .BA(BA),
-        .DA(DA),
-        .clk(clk),
-        .RW(RW),
-        .
-    )
-    */
-    IF IF();
-    DOF DOF();
-    EX EX();
-    WB WB();
+IF uut();
 endmodule
