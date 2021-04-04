@@ -3,21 +3,6 @@ module Instruction_Decoder(
 	input [6:0] opcode,
 	output reg [14:0] CW
 );
-//takes in opcode, decides everything based on that.
-/*
-assign opcode = instruction[31:25];
-assign RW = instruction[24];
-assign MD = instruction[23:22];
-assign BS = instruction[21:20];
-assign PS = instruction[19];
-assign MW = instruction[18];
-assign FS = instruction[17:13];
-assign MA = instruction[12];
-assign MB = instruction[11];
-assign AA = instruction[10:6];
-assign BA = instruction[5:1];
-assign CS = instruction[0];
-*/
     always @(posedge clk) begin
         case(opcode)
             //                RW MD BS PS MW FS    MB MA CS

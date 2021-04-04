@@ -18,6 +18,12 @@ module Register_File(
 	   for(i = 0; i < 32; i = i+1) begin 
 	     registers[i] = 0;
 	   end
+	   
+	   //constant arithmetic registers for ALU testing
+	   registers[1] = 4;
+	   registers[2] = -1;
+	   registers[3] = 1001;
+	   registers[4] = -4350;
 	end
 	
 	assign A = registers[AA];

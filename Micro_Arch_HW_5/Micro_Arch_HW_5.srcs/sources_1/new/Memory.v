@@ -1,4 +1,4 @@
-module Memory(
+module memory(
 	
 );
 endmodule
