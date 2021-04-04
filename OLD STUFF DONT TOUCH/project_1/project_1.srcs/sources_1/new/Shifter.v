@@ -10,8 +10,8 @@ module Shifter(
     begin
         case(direction)
             2'b00: shiftOut = A;
-            2'b01: shiftOut = A<<<1;
-            2'b10: shiftOut = A>>>1;
+            2'b01: shiftOut = A<<SH;
+            2'b10: shiftOut = A>>SH;
             2'b11: shiftOut = A;
         endcase
     end

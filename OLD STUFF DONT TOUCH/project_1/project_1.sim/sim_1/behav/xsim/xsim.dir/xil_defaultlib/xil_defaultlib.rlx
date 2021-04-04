@@ -1,0 +1,22 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+D:/Github Repos/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sources_1/new/Adder.v,1617319168,verilog,,D:/Github Repos/Micro_Arch_RISC/OLD STUFF DONT TOUCH/project_1/project_1.srcs/sources_1/new/DOF.v,,Adder,,,,,,,,
+D:/Github Repos/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sources_1/new/Function_Unit.v,1617319173,verilog,,D:/Github Repos/Micro_Arch_RISC/OLD STUFF DONT TOUCH/project_1/project_1.srcs/sources_1/new/Instruction_Memory.v,,Function_Unit,,,,,,,,
+D:/Github Repos/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sources_1/new/Memory.v,1617385479,verilog,,D:/Github Repos/Micro_Arch_RISC/OLD STUFF DONT TOUCH/project_1/project_1.srcs/sources_1/new/IF.v,,Memory,,,,,,,,
+D:/Github Repos/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sources_1/new/Register_File.v,1617331431,verilog,,D:/Github Repos/Micro_Arch_RISC/OLD STUFF DONT TOUCH/project_1/project_1.srcs/sources_1/new/Shifter.v,,Register_File,,,,,,,,
+D:/Github Repos/Micro_Arch_RISC/OLD STUFF DONT TOUCH/project_1/project_1.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+D:/Github Repos/Micro_Arch_RISC/OLD STUFF DONT TOUCH/project_1/project_1.srcs/sim_1/new/Adder_TB.v,1617035660,verilog,,D:/Github Repos/Micro_Arch_RISC/OLD STUFF DONT TOUCH/project_1/project_1.srcs/sim_1/new/Function_Unit_TB.v,,Adder_TB,,,,,,,,
+D:/Github Repos/Micro_Arch_RISC/OLD STUFF DONT TOUCH/project_1/project_1.srcs/sim_1/new/Function_Unit_TB.v,1617135831,verilog,,D:/Github Repos/Micro_Arch_RISC/OLD STUFF DONT TOUCH/project_1/project_1.srcs/sim_1/new/Shifter_TB.v,,Function_Unit_TB,,,,,,,,
+D:/Github Repos/Micro_Arch_RISC/OLD STUFF DONT TOUCH/project_1/project_1.srcs/sim_1/new/IF_TB.v,1617471411,verilog,,,,IF_TB,,,,,,,,
+D:/Github Repos/Micro_Arch_RISC/OLD STUFF DONT TOUCH/project_1/project_1.srcs/sim_1/new/Regisiter_File_TB.v,1617035079,verilog,,D:/Github Repos/Micro_Arch_RISC/OLD STUFF DONT TOUCH/project_1/project_1.srcs/sim_1/new/Adder_TB.v,,Regisiter_File_TB,,,,,,,,
+D:/Github Repos/Micro_Arch_RISC/OLD STUFF DONT TOUCH/project_1/project_1.srcs/sim_1/new/Shifter_TB.v,1617492921,verilog,,D:/Github Repos/Micro_Arch_RISC/OLD STUFF DONT TOUCH/project_1/project_1.srcs/sim_1/new/IF_TB.v,,Shifter_TB,,,,,,,,
+D:/Github Repos/Micro_Arch_RISC/OLD STUFF DONT TOUCH/project_1/project_1.srcs/sources_1/new/DOF.v,1617468964,verilog,,D:/Github Repos/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sources_1/new/Memory.v,,DOF,,,,,,,,
+D:/Github Repos/Micro_Arch_RISC/OLD STUFF DONT TOUCH/project_1/project_1.srcs/sources_1/new/EX.v,1617466751,verilog,,D:/Github Repos/Micro_Arch_RISC/OLD STUFF DONT TOUCH/project_1/project_1.srcs/sources_1/new/WB.v,,EX,,,,,,,,
+D:/Github Repos/Micro_Arch_RISC/OLD STUFF DONT TOUCH/project_1/project_1.srcs/sources_1/new/IF.v,1617382918,verilog,,D:/Github Repos/Micro_Arch_RISC/OLD STUFF DONT TOUCH/project_1/project_1.srcs/sources_1/new/Instruction_Decoder.v,,IF,,,,,,,,
+D:/Github Repos/Micro_Arch_RISC/OLD STUFF DONT TOUCH/project_1/project_1.srcs/sources_1/new/Instruction_Decoder.v,1617332298,verilog,,D:/Github Repos/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sources_1/new/Register_File.v,,Instruction_Decoder,,,,,,,,
+D:/Github Repos/Micro_Arch_RISC/OLD STUFF DONT TOUCH/project_1/project_1.srcs/sources_1/new/Instruction_Memory.v,1617332284,verilog,,D:/Github Repos/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sources_1/new/Adder.v,,Instruction_Memory,,,,,,,,
+D:/Github Repos/Micro_Arch_RISC/OLD STUFF DONT TOUCH/project_1/project_1.srcs/sources_1/new/RISC_Machine.v,1617489055,verilog,,D:/Github Repos/Micro_Arch_RISC/OLD STUFF DONT TOUCH/project_1/project_1.srcs/sim_1/new/Regisiter_File_TB.v,,RISC_Machine,,,,,,,,
+D:/Github Repos/Micro_Arch_RISC/OLD STUFF DONT TOUCH/project_1/project_1.srcs/sources_1/new/Shifter.v,1617493038,verilog,,D:/Github Repos/Micro_Arch_RISC/OLD STUFF DONT TOUCH/project_1/project_1.srcs/sources_1/new/EX.v,,Shifter,,,,,,,,
+D:/Github Repos/Micro_Arch_RISC/OLD STUFF DONT TOUCH/project_1/project_1.srcs/sources_1/new/WB.v,1617466210,verilog,,D:/Github Repos/Micro_Arch_RISC/OLD STUFF DONT TOUCH/project_1/project_1.srcs/sources_1/new/RISC_Machine.v,,WB,,,,,,,,

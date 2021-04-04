@@ -23,13 +23,16 @@
 module Shifter_TB();
 reg[4:0] SH;
 reg[31:0] A;
-wire[31:0] F;
+reg[1:0] direction;
+wire[31:0] shiftOut;
 Shifter uut(
+.direction(direction),
 .SH(SH),
 .A(A),
-.F(F)
+.shiftOut(shiftOut)
 );
 initial begin
+    direction = 2'b10;
     SH = 6'd3;
     A = 5'b10000;
 end
