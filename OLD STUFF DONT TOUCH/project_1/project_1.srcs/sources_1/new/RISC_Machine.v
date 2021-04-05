@@ -1,42 +1,36 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 04/02/2021 05:37:38 PM
-// Design Name: 
-// Module Name: RISC_Machine
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-
 
 module RISC_Machine(
         input reset
     );
     
-    //TEMPORARY, reg file needs to be passed down from top
-    /*
+    reg clk;
+    wire [4:0] top_AA, top_BA, top_DA;
+    wire [31:0] top_D, top_A, top_B;
+    
     Register_File RF(
-        .AA(AA),
-        .BA(BA),
-        .DA(DA),
+        .AA(top_AA),
+        .BA(top_BA),
+        .DA(top_DA),
         .clk(clk),
         .RW(RW),
-        .
-    )
-    */
-    IF IF();
+        .D(top_D),
+        .A(top_A),
+        .B(top_B)
+    );
+    
+        
+    IF IF(); //include register shit
     DOF DOF();
     EX EX();
     WB WB();
+    
+    
+    
+    initial begin 
+        clk = 0;
+    end
+    
+    always #5 clk = ~clk;
+
 endmodule
