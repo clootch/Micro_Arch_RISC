@@ -6,7 +6,6 @@ module DOF(
     input reset,
     input [31:0] PC_n1,
     output reg [31:0] PC_n2,
-    output reg RW,
     output reg [4:0] DA, //5 bits since its reg index not addr
     output reg [1:0] MD,
     output reg [1:0] BS,
@@ -14,20 +13,22 @@ module DOF(
     output reg MW,
     output reg [4:0] FS,
     output reg [4:0] SH,
-    output reg [31:0] A,
-    output reg [31:0] B,
     output reg [31:0] BUS_A,
-    output reg [31:0] BUS_B
+    output reg [31:0] BUS_B,
+    //register stuff
+    output reg [4:0] AA, BA,
+    output reg RW,
+    input [31:0] A, B
     );
     
     reg [14:0] IM;
     reg MA;
     reg MB;
-    reg [4:0] AA;
-    reg [4:0] BA;
     reg  CS;
     reg [31:0] CU; //constant unit output
 	wire [14:0] CW;
+
+    
     
     Instruction_Decoder Instruction_Decoder(
 		clk,

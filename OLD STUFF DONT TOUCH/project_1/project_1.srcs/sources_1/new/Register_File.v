@@ -7,6 +7,7 @@ module Register_File(
 	input[31:0] D,
 	output[31:0] A,
 	output[31:0] B
+	//needs ZVNC or ALU does that
 );
 	//All the necessary registers.
 	reg[31:0] registers[31:0];
