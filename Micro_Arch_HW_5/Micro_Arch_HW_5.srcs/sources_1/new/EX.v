@@ -17,7 +17,7 @@ module EX(
     output reg MDo, //MD output
     output reg Mem, //Output from Memory
     output reg [31:0] F,
-    output reg NV, //XOR of N and V
+    output NV, //XOR of N and V
     output [31:0] BrA
     );
     
@@ -44,13 +44,14 @@ module EX(
         .F(F)
     );
     
+    assign NV = V ^ N;
     
     always @ (negedge clk) begin
         //pull these registers along one tick
         RWo = RW;
         DAo = DA;
         MDo = MD;
-        NV = V ^ N;     
+        //NV = V ^ N;     
         
          
     end
