@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-module WB_TB(
+module WB_TB();
     reg RW,
     reg DA,
     reg [1:0] MD,
@@ -11,5 +11,5 @@ module WB_TB(
     wire RW_o,
     wire DA_o,
     wire [31:0] BUS_D
-    );
+    
 endmodule
