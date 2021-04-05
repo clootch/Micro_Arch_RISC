@@ -1,24 +1,4 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 04/02/2021 05:20:41 PM
-// Design Name: 
-// Module Name: WB
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-
 
 module WB(
     input RW,
@@ -26,13 +6,18 @@ module WB(
     input [1:0] MD,
     input [31:0] F,
     input NV,
-    input [31:0] M,
+    input [31:0] DATA,
     input clk
     );
     
-    always @ (posedge clk)
-    begin
-        
+    wire [31:0] BUS_D;
+    
+    assign BUS_D = (MD==2'b00) ? 
+        F : (MD==2'b01) ? 
+            DATA : 32'b0;
+    
+    always @ (posedge clk) begin
+                
     end
     
 endmodule
