@@ -27,6 +27,11 @@ module EX(
     wire F_i;
     wire [31:0] data_out_i;
     
+    initial begin
+        {RWo, DAo, MDo, data_out, F, NV} = 0;
+    end
+    
+    assign RAA = Bus_A;
     
     Adder Adder(
         .B(B),

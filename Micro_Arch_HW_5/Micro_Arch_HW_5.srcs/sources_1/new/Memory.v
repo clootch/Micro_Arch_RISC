@@ -23,6 +23,6 @@ module Memory(
 
     assign data_out = memory[A];
 
-    always @(negedge clk) if(MW) memory[A] = B;
+    always @(posedge clk) if(MW) memory[A] = B;
 
 endmodule
