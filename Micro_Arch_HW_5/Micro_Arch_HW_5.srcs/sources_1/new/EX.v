@@ -18,7 +18,7 @@ module EX(
     output reg MDo, //MD output
     output reg Mem, //Output from Memory
     output reg [31:0] F, //To WB
-    output NV, //XOR of N and V
+    output reg NV, //XOR of N and V
     output [31:0] BrA, //Output to Mux C
     output [31:0] RAA
     );
@@ -51,7 +51,6 @@ module EX(
         .F(F)
     );
     
-    assign NV = V ^ N;
     reg void;
     
     always @ (negedge clk) begin
@@ -60,7 +59,7 @@ module EX(
             RWo = RW;
             DAo = DA;
             MDo = MD;
-            //NV = V ^ N;
+            NV = V ^ N;
         end else begin
             //do all the reset shit
         end  
