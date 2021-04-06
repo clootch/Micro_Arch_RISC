@@ -23,6 +23,7 @@ module EX(
     output [31:0] RAA
     );
     
+    wire N_i, V_i, C_i, Z_i;
     reg N, V, C, Z;
     wire F_i;
     wire [31:0] data_out_i;
@@ -55,10 +56,10 @@ module EX(
         .B(Bus_B),
         .SH(SH),
         .FS(FS),
-        .Z(Z),
-        .N(N),
-        .V(V),
-        .C(C),
+        .Z(Z_i),
+        .N(N_i),
+        .V(V_i),
+        .C(C_i),
         .F(F_i)
     );
     
@@ -72,6 +73,7 @@ module EX(
             MDo = MD;
             NV = V ^ N;
             F = F_i;
+            {Z, V, N, C} = {Z_i, V_i, N_i, C_i};
             data_out = data_out_i;
         end else begin
             //do all the reset shit
