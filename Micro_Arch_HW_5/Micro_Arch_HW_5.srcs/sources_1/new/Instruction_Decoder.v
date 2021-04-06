@@ -5,7 +5,7 @@ module Instruction_Decoder(
 );
     always @(posedge clk) begin
         case(opcode)
-            //                RW MD BS PS MW FS    MB MA CS
+            //                   RW MD BS PS MW FS    MB MA CS
             7'b0000000: CW = 15'b0__00_00_0__0__00000_0__0__0; //NOP            
             7'b0000010: CW = 15'b1__00_00_0__0__00010_0__0__0; //ADD
             7'b0000101: CW = 15'b1__00_00_0__0__00101_0__0__0; //SUB

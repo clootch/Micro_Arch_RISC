@@ -1,7 +1,7 @@
 module Memory(
     input clk,
-    input A,
-    input B,
+    input [31:0] A,
+    input [31:0] B,
     //input Bus_A,
     //input Bus_B,
     //input [9:0] address_in,
