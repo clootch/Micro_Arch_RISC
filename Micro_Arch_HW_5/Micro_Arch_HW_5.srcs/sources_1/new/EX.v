@@ -24,6 +24,7 @@ module EX(
     );
     
     reg N, V, C, Z;
+    wire F_i;
     
     
     Adder Adder(
@@ -48,7 +49,7 @@ module EX(
         .N(N),
         .V(V),
         .C(C),
-        .F(F)
+        .F(F_i)
     );
     
     reg void;
@@ -60,6 +61,7 @@ module EX(
             DAo = DA;
             MDo = MD;
             NV = V ^ N;
+            F_i = F;
         end else begin
             //do all the reset shit
         end  
