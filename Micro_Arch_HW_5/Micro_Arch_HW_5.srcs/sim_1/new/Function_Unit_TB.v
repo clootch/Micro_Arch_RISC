@@ -1,5 +1,4 @@
 `timescale 1ns / 1ps
-
 module Function_Unit_TB();
 reg[31:0] A;
 reg[31:0] B;
@@ -19,18 +18,19 @@ Function_Unit uut(
 .C(C),
 .F(F)
 );
+integer i;
 initial begin
     A = 32'd1;
     B = 32'd1;
     SH = 5'b1;
-    for(integer i = 0; i < 32; i = i + 1)
+    for(i = 0; i < 32; i = i + 1)
     begin
         FS = i;
         #5;
     end
     A = 32'b11111111111111111111111111111111;
     B = 32'b11111111111111111111111111111111;
-    for(integer i = 0; i < 32; i = i + 1)
+    for(i = 0; i < 32; i = i + 1)
     begin
         FS = i;
         #5;

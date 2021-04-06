@@ -1,6 +1,4 @@
 module Function_Unit(
-	input clk,
-	input reset,
 	input[31:0] A,
 	input[31:0] B,
 	input[4:0] SH,
