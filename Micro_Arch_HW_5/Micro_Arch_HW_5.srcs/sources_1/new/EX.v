@@ -31,7 +31,9 @@ module EX(
         .BrA(BrA)
     );
     Memory Memory(
-    
+        .clk(clk),
+        .reset(reset),
+        .A(Bus_A)
     );
     
     Function_Unit Function_Unit(
@@ -51,21 +53,16 @@ module EX(
     //assign NV = V ^ N;
     
     always @ (negedge clk) begin
-        //pull these registers along one tick
-        RWo = RW;
-        DAo = DA;
-        MDo = MD;
-        NV = V ^ N;      
+        if(!reset) begin
+            //pull these registers along one tick
+            RWo = RW;
+            DAo = DA;
+            MDo = MD;
+            NV = V ^ N;
+        end else begin
+            {DA, RW, MD, BS, PS, MW, FS, SH} = 0;
+            {Bus_A, Bus_B} = 0;
+        end  
     end
-
-    /*
-    always @ (negedge clk)
-    begin
-        assign RWo = RW;
-        assign DAo = DA;
-        assign MDo = MD;
-        assign NV = V ^ N;
-    end
-    */
     
 endmodule
