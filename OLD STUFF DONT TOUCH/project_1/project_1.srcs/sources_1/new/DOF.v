@@ -24,7 +24,7 @@ module DOF(
     reg [14:0] IM;
     reg MA;
     reg MB;
-    reg  CS;
+    reg CS;
     reg [31:0] CU; //constant unit output
 	wire [14:0] CW;
 
@@ -45,7 +45,7 @@ module DOF(
             {RW, MD, BS, PS, MW, FS, MB, MA, CS} = CW; 
             {DA, AA, BA} = IR[24:10]; //DA/SA/SB
             IM = IR[14:0];
-            
+            SH = IR[4:0];
             //padding out IM to 32 bits based on CS
             CU = (CS && IM[14]) ? 
                 {17'h1FFFF, IM} : {17'b0, IM};
