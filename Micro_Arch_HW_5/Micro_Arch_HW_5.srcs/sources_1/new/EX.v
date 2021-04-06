@@ -25,6 +25,7 @@ module EX(
     
     reg N, V, C, Z;
     
+    
     Adder Adder(
         .B(B),
         .PC_n2(PC),
@@ -50,7 +51,8 @@ module EX(
         .F(F)
     );
     
-    //assign NV = V ^ N;
+    assign NV = V ^ N;
+    reg void;
     
     always @ (negedge clk) begin
         if(!reset) begin
@@ -58,10 +60,9 @@ module EX(
             RWo = RW;
             DAo = DA;
             MDo = MD;
-            NV = V ^ N;
+            //NV = V ^ N;
         end else begin
-            {DA, RW, MD, BS, PS, MW, FS, SH} = 0;
-            {Bus_A, Bus_B} = 0;
+            //do all the reset shit
         end  
     end
     
