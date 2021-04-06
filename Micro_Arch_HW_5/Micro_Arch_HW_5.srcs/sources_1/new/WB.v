@@ -14,7 +14,7 @@ module WB(
     
     assign BUS_D = (MD==2'b00) ? 
         F : (MD==2'b01) ? 
-            DATA : 32'b0;
+            DATA : {31'b0, NV};
     
     always @ (posedge clk) begin
                 
