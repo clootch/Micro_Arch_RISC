@@ -35,5 +35,11 @@ initial begin
     direction = 2'b10;
     SH = 6'd3;
     A = 5'b10000;
+    #10;
+    A = 32'b11111111111111111111110001;
+    SH = 6'd7;
+    #5;
+    direction = 2'b11;
+    
 end
 endmodule

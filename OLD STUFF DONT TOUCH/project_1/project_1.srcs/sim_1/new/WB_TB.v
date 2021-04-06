@@ -1,24 +1,4 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 04/06/2021 11:09:45 AM
-// Design Name: 
-// Module Name: WB_TB
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-
 
 module WB_TB();
 reg RW,NV,clk;
@@ -45,7 +25,7 @@ Register_File RF(
 initial begin
     clk = 0;
     DATA = 32'd123;
-    DA = 32'd4;
+    DA = 5'd4;
     NV = 0;
     
 end

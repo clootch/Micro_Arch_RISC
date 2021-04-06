@@ -20,6 +20,7 @@ Function_Unit uut(
 );
 integer i;
 initial begin
+    
     A = 32'd1;
     B = 32'd1;
     SH = 5'b1;
@@ -35,6 +36,8 @@ initial begin
         FS = i;
         #5;
     end
+    A = 32'b11111111111111111111111111111111;
+    FS = 5'b00111;
 end
 
 endmodule
