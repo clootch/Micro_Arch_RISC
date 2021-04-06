@@ -25,6 +25,7 @@ module EX(
     
     reg N, V, C, Z;
     wire F_i;
+    wire [31:0] data_out_i;
     
     
     Adder Adder(
@@ -38,7 +39,7 @@ module EX(
         .A(Bus_A),
         .B(Bus_B),
         .MW(MW),
-        .data_out(data_out)
+        .data_out(data_out_i)
     );
     
     
@@ -66,6 +67,7 @@ module EX(
             MDo = MD;
             NV = V ^ N;
             F = F_i;
+            data_out = data_out_i;
         end else begin
             //do all the reset shit
         end  
