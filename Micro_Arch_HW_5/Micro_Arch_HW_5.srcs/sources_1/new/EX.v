@@ -16,7 +16,7 @@ module EX(
     output reg RWo, //RW output
     output reg DAo, //DA output
     output reg MDo, //MD output
-    output reg Mem, //Output from Memory
+    output reg [31:0] data_out, //Output from Memory
     output reg [31:0] F, //To WB
     output reg NV, //XOR of N and V
     output [31:0] BrA, //Output to Mux C
@@ -32,11 +32,15 @@ module EX(
         .PC_n2(PC),
         .BrA(BrA)
     );
+    
     Memory Memory(
         .clk(clk),
-        .reset(reset),
-        .A(Bus_A)
+        .A(Bus_A),
+        .B(Bus_B),
+        .MW(MW),
+        .data_out(data_out)
     );
+    
     
     Function_Unit Function_Unit(
         .clk(clk),
@@ -61,7 +65,7 @@ module EX(
             DAo = DA;
             MDo = MD;
             NV = V ^ N;
-            F_i = F;
+            F = F_i;
         end else begin
             //do all the reset shit
         end  
