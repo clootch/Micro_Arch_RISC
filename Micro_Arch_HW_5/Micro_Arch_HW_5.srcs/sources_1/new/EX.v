@@ -9,7 +9,7 @@ module EX(
     input [1:0] BS,
     input PS,
     input MW,
-    input [5:0] FS,
+    input [4:0] FS,
     input [5:0] SH,
     input [31:0] Bus_A,
     input [31:0] Bus_B,
@@ -26,7 +26,7 @@ module EX(
     
     wire N_i, V_i, C_i, Z_i;
     reg N, V, C;
-    wire F_i;
+    wire [31:0] F_i;
     wire [31:0] data_out_i;
     
     initial begin
@@ -37,7 +37,7 @@ module EX(
     
     Adder Adder(
         .B(B),
-        .PC_n2(PC),
+        .PC(PC_n2),
         .BrA(BrA)
     );
     
@@ -51,8 +51,6 @@ module EX(
     
     
     Function_Unit Function_Unit(
-        .clk(clk),
-        .reset(reset),
         .A(Bus_A),
         .B(Bus_B),
         .SH(SH),

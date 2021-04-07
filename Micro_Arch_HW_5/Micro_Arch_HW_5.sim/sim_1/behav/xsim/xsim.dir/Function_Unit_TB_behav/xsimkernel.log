@@ -2,3 +2,6 @@ Running: xsim.dir/Function_Unit_TB_behav/xsimk.exe -simmode gui -wdb Function_Un
 Design successfully loaded
 Design Loading Memory Usage: 6432 KB (Peak: 6432 KB)
 Design Loading CPU Usage: 15 ms
+Simulation completed
+Simulation Memory Usage: 7048 KB (Peak: 7048 KB)
+Simulation CPU Usage: 15 ms
