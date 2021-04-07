@@ -12,7 +12,7 @@ module DOF(
     output reg PS,
     output reg MW,
     output reg [4:0] FS,
-    output reg [4:0] SH,
+    output reg [5:0] SH,
     output reg [31:0] BUS_A,
     output reg [31:0] BUS_B,
     //register stuff
