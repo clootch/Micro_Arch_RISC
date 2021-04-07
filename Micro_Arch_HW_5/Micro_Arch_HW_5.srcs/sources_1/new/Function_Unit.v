@@ -78,7 +78,8 @@ begin
 	endcase
 	
 	//Zero
-	if (F == 0) Z = 0;
+	if (F == 0) Z = 1;
+	else Z = 0;
 	
 	//Negative 
 	N = F[31];

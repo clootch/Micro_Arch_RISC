@@ -27,7 +27,7 @@ module DOF(
     reg CS;
     reg [31:0] CU; //constant unit output
 	wire [14:0] CW;
-    reg [4:0] FS_int;
+    reg [4:0] FS_int = 0;
 
 
     
