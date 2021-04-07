@@ -4,8 +4,8 @@ module IF(
     input[31:0] PC,
     input clk,
     input reset,
-    output reg [31:0] PC_n1,
-    output reg [31:0] IR
+    output reg [31:0] PC_n1=0,
+    output reg [31:0] IR=0
     );
     
     wire [31:0] temp_IR;

@@ -5,20 +5,20 @@ module DOF(
     input clk,
     input reset,
     input [31:0] PC_n1,
-    output reg [31:0] PC_n2,
-    output reg [4:0] DA, //5 bits since its reg index not addr
-    output reg [1:0] MD,
-    output reg [1:0] BS,
-    output reg PS,
-    output reg MW,
-    output reg [4:0] FS,
-    output reg [5:0] SH,
-    output reg [31:0] BUS_A,
-    output reg [31:0] BUS_B,
+    output reg [31:0] PC_n2 = 0,
+    output reg [4:0] DA = 0, //5 bits since its reg index not addr
+    output reg [1:0] MD = 0,
+    output reg [1:0] BS = 0,
+    output reg PS = 0,
+    output reg MW = 0,
+    output reg [4:0] FS = 0, 
+    output reg [5:0] SH = 0,
+    output reg [31:0] BUS_A = 0,
+    output reg [31:0] BUS_B =0,
     //register stuff
-    output reg [4:0] AA, BA,
-    output reg RW,
-    input [31:0] A, B
+    output reg [4:0] AA=0, BA=0,
+    output reg RW=0,
+    input [31:0] A,B
     );
     
     reg [14:0] IM;
@@ -28,7 +28,7 @@ module DOF(
     reg [31:0] CU; //constant unit output
 	wire [14:0] CW;
 
-    
+
     
     Instruction_Decoder Instruction_Decoder(
 		clk,
