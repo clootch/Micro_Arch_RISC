@@ -1,39 +1,21 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 03/29/2021 11:28:35 AM
-// Design Name: 
-// Module Name: Adder_TB
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-
 
 module Adder_TB();
-reg[31:0] PC;
-reg [31:0] B;
-wire[31:0] BrA;
-Adder uut(
-.PC(PC),
-.B(B),
-.BrA(BrA));
-
-initial begin
-   PC = 32'd123;
-   B = 32'd5; 
-   #10;
-   PC = 32'd145;
-   B = 32'd1;
-end
+    reg[31:0] PC;
+    reg [31:0] B;
+    wire[31:0] BrA;
+    Adder uut(
+    .PC(PC),
+    .B(B),
+    .BrA(BrA));
+    
+    //We load several values into inputs to verify
+    //that the output is adding correctly
+    initial begin
+       PC = 32'd123; //PC gets 123
+       B = 32'd5; //B gets 5
+       #10; //Pause while BrA displays output
+       PC = 32'd145; //145 into PC
+       B = 32'd1; //1 into B
+    end
 endmodule

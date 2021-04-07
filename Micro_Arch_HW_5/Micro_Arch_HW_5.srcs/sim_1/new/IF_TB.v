@@ -20,7 +20,7 @@ module IF_TB();
         PC = 0;
     end
 
-    always #10 clk = ~clk;
+    always #5 clk = ~clk;
     
     always @(negedge clk) begin
         PC = PC + 1;
