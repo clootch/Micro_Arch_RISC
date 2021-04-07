@@ -21,7 +21,9 @@ module EX(
     output reg NV, //XOR of N and V
     output reg Z,
     output [31:0] BrA, //Output to Mux C
-    output [31:0] RAA
+    output [31:0] RAA,
+    output BS_out,
+    output PS_out
     );
     
     wire N_i, V_i, C_i, Z_i;
@@ -34,6 +36,8 @@ module EX(
     end
     
     assign RAA = Bus_A;
+    assign BS_out = BS;
+    assign PS_out = PS;
     
     Adder Adder(
         .B(Bus_B),
