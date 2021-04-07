@@ -27,7 +27,6 @@ module RISC_Machine(
     wire [31:0] top_PC_n1,top_IR;    
     reg [31:0] top_PC = 0;
     
-    
     IF IF(
         .PC(top_PC),
         .clk(clk),
@@ -114,7 +113,7 @@ module RISC_Machine(
     
     
     initial begin 
-        clk = 0;
+        clk = 1;
     end
     
     always #5 clk = ~clk;
@@ -122,8 +121,8 @@ module RISC_Machine(
     wire [31:0] PC_temp;
     
     assign PC_temp = {top_BS[1], (((top_PS ^ top_Z) | top_BS[1]) & top_BS[0])};
-    /*always @(negedge clk) top_PC = (PC_temp==0) ? 
+    always @(negedge clk) top_PC = (PC_temp==0) ? 
                                     top_PC_n1 : (PC_temp==1 || PC_temp==3) ?
-                                        top_BrA : top_RAA;*/
-    always @(negedge clk) top_PC = top_PC + 1;
+                                        top_BrA : top_RAA;
+    //always @(negedge clk) top_PC = top_PC + 1;
 endmodule

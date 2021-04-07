@@ -22,7 +22,7 @@ module EX(
     output reg Z=0,
     output [31:0] BrA, //Output to Mux C
     output [31:0] RAA,
-    output BS_out,
+    output [1:0] BS_out,
     output PS_out
     );
     
