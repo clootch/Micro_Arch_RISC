@@ -4,9 +4,9 @@ module EX(
     input reset,
     input[31:0] PC_n2,
     input RW,
-    input DA,
-    input MD,
-    input BS,
+    input [4:0] DA,
+    input [1:0] MD,
+    input [1:0] BS,
     input PS,
     input MW,
     input [5:0] FS,
@@ -14,17 +14,22 @@ module EX(
     input [31:0] Bus_A,
     input [31:0] Bus_B,
     output reg RWo, //RW output
-    output reg DAo, //DA output
-    output reg MDo, //MD output
+    output reg [4:0] DAo, //DA output
+    output reg [1:0] MDo, //MD output
     output reg [31:0] data_out, //Output from Memory
     output reg [31:0] F, //To WB
     output reg NV, //XOR of N and V
+    output reg Z,
     output [31:0] BrA, //Output to Mux C
     output [31:0] RAA
     );
     
+<<<<<<< Updated upstream
     wire N_i, V_i, C_i, Z_i;
     reg N, V, C, Z;
+=======
+    reg N, V, C;
+>>>>>>> Stashed changes
     wire F_i;
     wire [31:0] data_out_i;
     
