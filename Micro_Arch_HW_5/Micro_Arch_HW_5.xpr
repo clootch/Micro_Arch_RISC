@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="49" Path="C:/Users/Admin/Desktop/Verilog/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.xpr">
+<Project Version="7" Minor="49" Path="G:/Dev/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="9952991639394867853bd1801c07b63d"/>
@@ -220,6 +220,13 @@
         </FileInfo>
       </File>
       <File Path="$PSRCDIR/sim_1/new/EX_TB.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../OLD STUFF DONT TOUCH/project_1/project_1.srcs/sim_1/new/RISC_Machine_TB.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
