@@ -27,6 +27,7 @@ module DOF(
     reg CS;
     reg [31:0] CU; //constant unit output
 	wire [14:0] CW;
+    reg [4:0] FS_int;
 
 
     
@@ -42,7 +43,7 @@ module DOF(
     always @ (negedge clk) begin
         if(!reset) begin
             PC_n2 = PC_n1;
-            {RW, MD, BS, PS, MW, FS, MB, MA, CS} = CW; 
+            {RW, MD, BS, PS, MW, FS_int, MB, MA, CS} <= CW; 
             {DA, AA, BA} = IR[24:10]; //DA/SA/SB
             IM = IR[14:0];
             SH = IR[4:0];
@@ -53,7 +54,7 @@ module DOF(
             BUS_A = (MA) ? PC_n1 : A; //finished
             BUS_B = (MB) ? CU : B; //finished
             
-            
+            FS <= FS_int;
             
         end else begin
             PC_n2 = 0;

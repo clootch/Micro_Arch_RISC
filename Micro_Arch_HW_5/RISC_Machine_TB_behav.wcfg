@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="168446fs"></ZoomEndTime>
-      <Cursor1Time time="10000fs"></Cursor1Time>
+      <ZoomStartTime time="6490fs"></ZoomStartTime>
+      <ZoomEndTime time="99090fs"></ZoomEndTime>
+      <Cursor1Time time="15297fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="212"></NameColumnWidth>
-      <ValueColumnWidth column_width="98"></ValueColumnWidth>
+      <ValueColumnWidth column_width="90"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="16" />
+   <WVObjectSize size="29" />
    <wvobject fp_name="/RISC_Machine_TB/reset" type="logic">
       <obj_property name="ElementShortName">reset</obj_property>
       <obj_property name="ObjectShortName">reset</obj_property>
@@ -39,10 +39,66 @@
    <wvobject fp_name="/RISC_Machine_TB/uut/top_IR" type="array">
       <obj_property name="ElementShortName">top_IR[31:0]</obj_property>
       <obj_property name="ObjectShortName">top_IR[31:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/RISC_Machine_TB/uut/top_F" type="array">
       <obj_property name="ElementShortName">top_F[31:0]</obj_property>
       <obj_property name="ObjectShortName">top_F[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC_Machine_TB/uut/top_FS" type="array">
+      <obj_property name="ElementShortName">top_FS[4:0]</obj_property>
+      <obj_property name="ObjectShortName">top_FS[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC_Machine_TB/uut/EX/FS" type="array">
+      <obj_property name="ElementShortName">FS[4:0]</obj_property>
+      <obj_property name="ObjectShortName">FS[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC_Machine_TB/uut/RF/AA" type="array">
+      <obj_property name="ElementShortName">AA[4:0]</obj_property>
+      <obj_property name="ObjectShortName">AA[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC_Machine_TB/uut/RF/BA" type="array">
+      <obj_property name="ElementShortName">BA[4:0]</obj_property>
+      <obj_property name="ObjectShortName">BA[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC_Machine_TB/uut/RF/A" type="array">
+      <obj_property name="ElementShortName">A[31:0]</obj_property>
+      <obj_property name="ObjectShortName">A[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC_Machine_TB/uut/RF/B" type="array">
+      <obj_property name="ElementShortName">B[31:0]</obj_property>
+      <obj_property name="ObjectShortName">B[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC_Machine_TB/uut/DOF/A" type="array">
+      <obj_property name="ElementShortName">A[31:0]</obj_property>
+      <obj_property name="ObjectShortName">A[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC_Machine_TB/uut/DOF/B" type="array">
+      <obj_property name="ElementShortName">B[31:0]</obj_property>
+      <obj_property name="ObjectShortName">B[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC_Machine_TB/uut/DOF/FS" type="array">
+      <obj_property name="ElementShortName">FS[4:0]</obj_property>
+      <obj_property name="ObjectShortName">FS[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC_Machine_TB/uut/DOF/BUS_A" type="array">
+      <obj_property name="ElementShortName">BUS_A[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BUS_A[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC_Machine_TB/uut/DOF/BUS_B" type="array">
+      <obj_property name="ElementShortName">BUS_B[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BUS_B[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC_Machine_TB/uut/EX/Bus_A" type="array">
+      <obj_property name="ElementShortName">Bus_A[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Bus_A[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC_Machine_TB/uut/EX/Bus_B" type="array">
+      <obj_property name="ElementShortName">Bus_B[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Bus_B[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/RISC_Machine_TB/uut/top_BUS_A" type="array">
       <obj_property name="ElementShortName">top_BUS_A[31:0]</obj_property>
@@ -51,6 +107,7 @@
    <wvobject fp_name="/RISC_Machine_TB/uut/top_BUS_B" type="array">
       <obj_property name="ElementShortName">top_BUS_B[31:0]</obj_property>
       <obj_property name="ObjectShortName">top_BUS_B[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/RISC_Machine_TB/uut/RF/registers[3]" type="array">
       <obj_property name="ElementShortName">[3][31:0]</obj_property>
