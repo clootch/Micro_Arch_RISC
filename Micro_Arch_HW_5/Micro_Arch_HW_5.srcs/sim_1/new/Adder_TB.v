@@ -9,7 +9,7 @@ Adder uut(
 .B(B),
 .BrA(BrA));
 
-//We load several values into inputs to veryify
+//We load several values into inputs to verify
 //that the output is adding correctly
 initial begin
    PC = 32'd123; //PC gets 123
