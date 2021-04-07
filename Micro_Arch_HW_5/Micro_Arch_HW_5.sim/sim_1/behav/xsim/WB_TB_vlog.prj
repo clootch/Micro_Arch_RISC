@@ -1,0 +1,29 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Micro_Arch_HW_5.srcs/sources_1/new/Function_Unit.v" \
+"../../../../Micro_Arch_HW_5.srcs/sources_1/new/Instruction_Memory.v" \
+"../../../../Micro_Arch_HW_5.srcs/sources_1/new/Adder.v" \
+"../../../../Micro_Arch_HW_5.srcs/sources_1/new/DOF.v" \
+"../../../../Micro_Arch_HW_5.srcs/sources_1/new/Memory.v" \
+"../../../../Micro_Arch_HW_5.srcs/sources_1/new/IF.v" \
+"../../../../Micro_Arch_HW_5.srcs/sources_1/new/Instruction_Decoder.v" \
+"../../../../Micro_Arch_HW_5.srcs/sources_1/new/Register_File.v" \
+"../../../../Micro_Arch_HW_5.srcs/sources_1/new/Shifter.v" \
+"../../../../Micro_Arch_HW_5.srcs/sources_1/new/RISC_Machine.v" \
+"../../../../Micro_Arch_HW_5.srcs/sources_1/new/EX.v" \
+"../../../../Micro_Arch_HW_5.srcs/sources_1/new/WB.v" \
+"../../../../Micro_Arch_HW_5.srcs/sim_1/new/Regisiter_File_TB.v" \
+"../../../../Micro_Arch_HW_5.srcs/sim_1/new/Adder_TB.v" \
+"../../../../Micro_Arch_HW_5.srcs/sim_1/new/Function_Unit_TB.v" \
+"../../../../Micro_Arch_HW_5.srcs/sim_1/new/Shifter_TB.v" \
+"../../../../Micro_Arch_HW_5.srcs/sim_1/new/IF_TB.v" \
+"../../../../Micro_Arch_HW_5.srcs/sim_1/new/DOF_TB.v" \
+"../../../../Micro_Arch_HW_5.srcs/sim_1/new/WB_TB.v" \
+"../../../../Micro_Arch_HW_5.srcs/sim_1/new/Memory_TB.v" \
+"../../../../Micro_Arch_HW_5.srcs/sim_1/new/EX_TB.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

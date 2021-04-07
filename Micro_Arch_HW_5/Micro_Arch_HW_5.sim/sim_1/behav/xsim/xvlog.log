@@ -38,7 +38,6 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "G:/Dev/Micro_Arch_RISC/Micro_Arch_H
 INFO: [VRFC 10-311] analyzing module DOF_TB
 INFO: [VRFC 10-2263] Analyzing Verilog file "G:/Dev/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sim_1/new/WB_TB.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module WB_TB
-INFO: [VRFC 10-2458] undeclared symbol D, assumed default net type wire [G:/Dev/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sim_1/new/WB_TB.v:42]
 INFO: [VRFC 10-2263] Analyzing Verilog file "G:/Dev/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sim_1/new/Memory_TB.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Memory_TB
 INFO: [VRFC 10-2263] Analyzing Verilog file "G:/Dev/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sim_1/new/EX_TB.v" into library xil_defaultlib
