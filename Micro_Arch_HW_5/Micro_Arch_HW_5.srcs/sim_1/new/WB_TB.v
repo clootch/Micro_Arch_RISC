@@ -10,6 +10,9 @@ module WB_TB();
     wire [31:0] BUS_D;
     wire RW_o;
     
+    reg [4:0] AA = 0;
+    wire [31:0] reg_read;
+    
     WB uut(
         .RW(RW),
         .DA(DA),
@@ -27,7 +30,9 @@ module WB_TB();
             .DA(DA_o),
             .clk(clk),
             .RW(RW_o),
-            .D(BUS_D)
+            .D(BUS_D), 
+            .AA(AA),
+            .A(reg_read)
         );
 
     initial begin
@@ -44,7 +49,7 @@ module WB_TB();
         if(count == 1) begin
             MD = 1;
             RW = 1;
-            DA = 1;
+            DA = 1; AA =1;
             F = 11;
             NV = 0;
             

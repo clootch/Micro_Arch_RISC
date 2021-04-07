@@ -11,7 +11,7 @@ G:/Dev/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sim_1/new/IF_TB.v,16
 G:/Dev/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sim_1/new/Memory_TB.v,1617749192,verilog,,G:/Dev/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sim_1/new/EX_TB.v,,Memory_TB,,,,,,,,
 G:/Dev/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sim_1/new/Regisiter_File_TB.v,1617744907,verilog,,G:/Dev/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sim_1/new/Adder_TB.v,,Regisiter_File_TB,,,,,,,,
 G:/Dev/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sim_1/new/Shifter_TB.v,1617751503,verilog,,G:/Dev/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sim_1/new/IF_TB.v,,Shifter_TB,,,,,,,,
-G:/Dev/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sim_1/new/WB_TB.v,1617760046,verilog,,G:/Dev/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sim_1/new/Memory_TB.v,,WB_TB,,,,,,,,
+G:/Dev/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sim_1/new/WB_TB.v,1617760599,verilog,,G:/Dev/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sim_1/new/Memory_TB.v,,WB_TB,,,,,,,,
 G:/Dev/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sources_1/new/Adder.v,1617319713,verilog,,G:/Dev/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sources_1/new/DOF.v,,Adder,,,,,,,,
 G:/Dev/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sources_1/new/DOF.v,1617744907,verilog,,G:/Dev/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sources_1/new/Memory.v,,DOF,,,,,,,,
 G:/Dev/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sources_1/new/EX.v,1617758862,verilog,,G:/Dev/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sources_1/new/WB.v,,EX,,,,,,,,
