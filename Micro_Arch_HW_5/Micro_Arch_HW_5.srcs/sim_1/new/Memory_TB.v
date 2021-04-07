@@ -1,12 +1,10 @@
 `timescale 1ns / 1ps
 
 module Memory_TB();
-    
     reg clk = 0;
     reg [31:0] A = 0;
     reg [31:0] B = 0;
-    reg MW = 0;
-    
+    reg MW = 0;  
     wire [31:0] data_out;
     reg [31:0] count = 0;
     
@@ -19,9 +17,11 @@ module Memory_TB();
     );
     
     always #5 clk = ~clk;
-    //always @(negedge clk) {A, B, MW} = 0;
+
+    //Count initialized to 0
+    //Set values based on count to verify
+    //Correct output from TB
     always @(posedge clk) begin 
-        
         if(count==1) begin
             A = 1;
             B = 69;
@@ -53,8 +53,7 @@ module Memory_TB();
             MW = 0;
         end
         
-        count = count+1;
+        count = count+1; //Count++ every time
     end
-    
-    
 endmodule
+
