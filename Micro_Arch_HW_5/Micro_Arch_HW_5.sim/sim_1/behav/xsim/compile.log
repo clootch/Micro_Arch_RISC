@@ -1,45 +1,44 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/Verilog/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sources_1/new/Function_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/Dev/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sources_1/new/Function_Unit.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Function_Unit
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/Verilog/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sources_1/new/Instruction_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/Dev/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sources_1/new/Instruction_Memory.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Instruction_Memory
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/Verilog/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sources_1/new/Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/Dev/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sources_1/new/Adder.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Adder
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/Verilog/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sources_1/new/DOF.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/Dev/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sources_1/new/DOF.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module DOF
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/Verilog/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sources_1/new/Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/Dev/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sources_1/new/Memory.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Memory
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/Verilog/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sources_1/new/IF.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/Dev/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sources_1/new/IF.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module IF
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/Verilog/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sources_1/new/Instruction_Decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/Dev/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sources_1/new/Instruction_Decoder.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Instruction_Decoder
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/Verilog/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sources_1/new/Register_File.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/Dev/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sources_1/new/Register_File.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Register_File
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/Verilog/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sources_1/new/Shifter.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/Dev/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sources_1/new/Shifter.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Shifter
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/Verilog/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sources_1/new/RISC_Machine.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/Dev/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sources_1/new/RISC_Machine.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module RISC_Machine
-INFO: [VRFC 10-2458] undeclared symbol RW, assumed default net type wire [C:/Users/Admin/Desktop/Verilog/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sources_1/new/RISC_Machine.v:18]
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/Verilog/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sources_1/new/EX.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/Dev/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sources_1/new/EX.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module EX
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/Verilog/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sources_1/new/WB.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/Dev/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sources_1/new/WB.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module WB
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/Verilog/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sim_1/new/Regisiter_File_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/Dev/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sim_1/new/Regisiter_File_TB.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Regisiter_File_TB
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/Verilog/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sim_1/new/Adder_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/Dev/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sim_1/new/Adder_TB.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Adder_TB
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/Verilog/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sim_1/new/Function_Unit_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/Dev/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sim_1/new/Function_Unit_TB.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Function_Unit_TB
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/Verilog/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sim_1/new/Shifter_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/Dev/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sim_1/new/Shifter_TB.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Shifter_TB
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/Verilog/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sim_1/new/IF_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/Dev/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sim_1/new/IF_TB.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module IF_TB
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/Verilog/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sim_1/new/DOF_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/Dev/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sim_1/new/DOF_TB.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module DOF_TB
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/Verilog/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sim_1/new/WB_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/Dev/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sim_1/new/WB_TB.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module WB_TB
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/Verilog/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sim_1/new/Memory_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/Dev/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sim_1/new/Memory_TB.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Memory_TB
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/Verilog/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sim_1/new/EX_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/Dev/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sim_1/new/EX_TB.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module EX_TB
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Admin/Desktop/Verilog/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/Dev/Micro_Arch_RISC/OLD STUFF DONT TOUCH/project_1/project_1.srcs/sim_1/new/RISC_Machine_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RISC_Machine_TB
