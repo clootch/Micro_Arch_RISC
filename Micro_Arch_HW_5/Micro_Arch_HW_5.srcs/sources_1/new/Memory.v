@@ -2,9 +2,6 @@ module Memory(
     input clk,
     input [31:0] A,
     input [31:0] B,
-    //input Bus_A,
-    //input Bus_B,
-    //input [9:0] address_in,
     input MW,
     output [31:0] data_out
 );
@@ -18,7 +15,6 @@ module Memory(
         begin
             memory[i] = 32'd0;
         end
-        //data_out = 32'd0;
     end
 
     assign data_out = memory[A];
