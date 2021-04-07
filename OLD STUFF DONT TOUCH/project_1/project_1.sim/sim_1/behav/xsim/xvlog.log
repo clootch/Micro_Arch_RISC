@@ -8,11 +8,9 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Github Repos/Micro_Arch_RISC/Mic
 INFO: [VRFC 10-311] analyzing module Memory
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Github Repos/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sources_1/new/EX.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module EX
-INFO: [VRFC 10-2458] undeclared symbol B, assumed default net type wire [D:/Github Repos/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sources_1/new/EX.v:37]
-INFO: [VRFC 10-2458] undeclared symbol PC, assumed default net type wire [D:/Github Repos/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sources_1/new/EX.v:38]
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Github Repos/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sources_1/new/RISC_Machine.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module RISC_Machine
-INFO: [VRFC 10-2458] undeclared symbol RW, assumed default net type wire [D:/Github Repos/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sources_1/new/RISC_Machine.v:17]
+INFO: [VRFC 10-2458] undeclared symbol RW, assumed default net type wire [D:/Github Repos/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sources_1/new/RISC_Machine.v:18]
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Github Repos/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sources_1/new/WB.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module WB
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Github Repos/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sources_1/new/Adder.v" into library xil_defaultlib
@@ -40,3 +38,5 @@ INFO: [VRFC 10-311] analyzing module IF_TB
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Github Repos/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sim_1/new/WB_TB.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module WB_TB
 INFO: [VRFC 10-2458] undeclared symbol D, assumed default net type wire [D:/Github Repos/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sim_1/new/WB_TB.v:42]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Github Repos/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sim_1/new/EX_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_TB

@@ -36,7 +36,7 @@ module EX(
     assign RAA = Bus_A;
     
     Adder Adder(
-        .B(B),
+        .B(Bus_B),
         .PC(PC_n2),
         .BrA(BrA)
     );
