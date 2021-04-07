@@ -24,12 +24,8 @@ module EX(
     output [31:0] RAA
     );
     
-<<<<<<< Updated upstream
     wire N_i, V_i, C_i, Z_i;
     reg N, V, C, Z;
-=======
-    reg N, V, C;
->>>>>>> Stashed changes
     wire F_i;
     wire [31:0] data_out_i;
     

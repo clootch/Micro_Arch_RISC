@@ -31,7 +31,6 @@ begin
 			F = A;
 			V = 0;
 		end
-<<<<<<< Updated upstream
 		5'b00010: begin //add
 			{C,F} = A+B;
 			V = (A[31] == B[31]) && (A[31] != F[31]);
@@ -39,15 +38,6 @@ begin
 		5'b00101: begin //sub
 			{C,F} = A + ~B + 1; //Need a special case here (Refer to Table 10-20)
 			V = (A[31] != B[31]) && (F[31] == B[31]);
-=======
-		5'b00010: begin
-		{C,F} = A+B;
-		V = (A[31] == B[31]) && (A[31] != F[31]);
-		end
-		5'b00101: begin
-		{C,F} = A+B+1; //Need a special case here (Refer to Table 10-20)
-		V = (A[31] == B[31]) && (A[31] != F[31]);
->>>>>>> Stashed changes
 		end
 		5'b01000: begin //AND
 			F = A & B;
