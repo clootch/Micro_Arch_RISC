@@ -13,7 +13,7 @@ module EX_TB();
     wire [4:0] DAo;
     wire [31:0] BrA, RAA, data_out, F;
     
-    reg [31:0] count =0;
+    reg [31:0] count =-1;
 
     integer i;
     
@@ -54,7 +54,9 @@ module EX_TB();
     end
     
     reg void;
-    always @(negedge clk) begin
+    always @(posedge clk) begin
+        
+        
         if (count==0) begin
             Bus_A = 32'b01111111111111111111111111111111;
             Bus_B = 32'b1;
@@ -65,56 +67,56 @@ module EX_TB();
             //ST
             Bus_A = 32'b1;
             Bus_B = 32'b101010101;
-            #5;
+            //#5;
             {RW, MD, BS, PS, MW, FS, void, void, void} = 15'b0__00_00_0__1__00000_0__0__0;
         end
         if (count == 2) begin
-            #5;
+            //#5;
             //LSL
             Bus_A = 32'b111110000111000011111;
             SH = 5;
             {RW, MD, BS, PS, MW, FS, void, void, void} = 15'b1__00_00_0__0__10000_0__0__0;
         end
         if (count == 3) begin
-            #5; 
+            Bus_A = 1;
+            //#5; 
             //LD
             {RW, MD, BS, PS, MW, FS, void, void, void} = 15'b1__01_00_0__0__00000_0__0__0;
         end
         if (count == 4) begin
-            #5;
+            //#5;
             //BNZ
             {RW, MD, BS, PS, MW, FS, void, void, void} = 15'b0__00_01_0__0__00000_1__0__1;
         end
         if (count == 5) begin
-            #5;
+            //#5;
             //MOV
             {RW, MD, BS, PS, MW, FS, void, void, void} = 15'b1__00_00_0__0__00000_0__0__0;
         end
         if (count == 6) begin
-            #5;
+            //#5;
             //JMP
             {RW, MD, BS, PS, MW, FS, void, void, void} = 15'b0__00_11_0__0__00000_1__0__1;
         end
         if (count == 7) begin
-            #5;
+            //#5;
             //NOP
             {RW, MD, BS, PS, MW, FS, void, void, void} = 15'b0__00_00_0__0__00000_0__0__0;
         end
         if (count == 8) begin
-            #5;
+            //#5;
             //ADI
             Bus_A = 32'b10000000000000000000000000000000;
             Bus_B = 32'b1;
             {RW, MD, BS, PS, MW, FS, void, void, void} = 15'b1__00_00_0__0__00010_1__0__1;
         end
         if ( count == 9) begin
-            #5;
+            //#5;
             //AND
             {RW, MD, BS, PS, MW, FS, void, void, void} = 15'b1__00_00_0__0__01000_0__0__0;
-        end
-        count = count + 1;
+        end        
     end
-
+    always @(negedge clk) count = count + 1;
     always @(negedge clk) PC_n2=PC_n2+1;
     always #5 clk = ~clk;
     
