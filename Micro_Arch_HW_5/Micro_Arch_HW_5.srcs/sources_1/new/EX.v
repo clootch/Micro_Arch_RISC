@@ -25,7 +25,7 @@ module EX(
     );
     
     wire N_i, V_i, C_i, Z_i;
-    reg N, V, C, Z;
+    reg N, V, C;
     wire F_i;
     wire [31:0] data_out_i;
     

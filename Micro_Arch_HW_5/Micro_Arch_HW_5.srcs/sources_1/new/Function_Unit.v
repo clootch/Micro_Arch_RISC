@@ -59,15 +59,9 @@ begin
 			C = 0;
 			V =0;
 		end
-<<<<<<< Updated upstream
 		5'b00111: begin //inc A
 			{C,F} = A + 1;
 			V = F[31] != A[31] && A[31] == 0;
-=======
-		5'b00111: begin
-		{C,F} = A + 1;
-		V = F[31] != A[31] && A[31] == 0;
->>>>>>> Stashed changes
 		end
 		5'b10000: begin //LSL
 			F = shiftval; //left
