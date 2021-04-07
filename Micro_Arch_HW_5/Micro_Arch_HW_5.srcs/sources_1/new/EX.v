@@ -16,28 +16,27 @@ module EX(
     output reg RWo=0, //RW output
     output reg [4:0] DAo=0, //DA output
     output reg [1:0] MDo=0, //MD output
-    output reg [31:0] data_out=0, //Output from Memory
+    output [31:0] data_out, //Output from Memory
     output [31:0] F, //To WB
     output NV, //XOR of N and V
-    output Z,
+    output reg Z = 0,
     output [31:0] BrA, //Output to Mux C
     output [31:0] RAA,
-    output [1:0] BS_out,
-    output PS_out
+    output reg [1:0] BS_out = 0,
+    output reg PS_out =0
     );
     
-    wire N, V, C;
+    wire N, V, C, Z_i;
     //reg N, V, C;
     
-    wire [31:0] data_out_i;
     
     initial begin
-        {RWo, DAo, MDo, data_out} = 0;
+        {RWo, DAo, MDo} = 0;
     end
     
     assign RAA = Bus_A;
-    assign BS_out = BS;
-    assign PS_out = PS;
+    //assign BS_out = BS;
+    //assign PS_out = PS;
     
     Adder Adder(
         .B(Bus_B),
@@ -50,7 +49,7 @@ module EX(
         .A(Bus_A),
         .B(Bus_B),
         .MW(MW),
-        .data_out(data_out_i)
+        .data_out(data_out)
     );
     
     
@@ -59,7 +58,7 @@ module EX(
         .B(Bus_B),
         .SH(SH),
         .FS(FS),
-        .Z(Z),
+        .Z(Z_i),
         .N(N),
         .V(V),
         .C(C),
@@ -75,11 +74,12 @@ module EX(
             RWo = RW;
             DAo = DA;
             MDo = MD;
-            
+            Z = Z_i;
+            BS_out = BS;
+            PS_out = PS;
             //NV = V_i ^ N_i;
             //F = F_i;
             //{Z, V, N, C} = {Z_i, V_i, N_i, C_i};
-            data_out = data_out_i;
         end else begin
             //do all the reset shit
         end  

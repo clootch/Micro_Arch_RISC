@@ -25,9 +25,12 @@ module DOF(
     reg MA;
     reg MB;
     reg CS;
-    reg [31:0] CU; //constant unit output
+    wire [31:0] CU; //constant unit output
 	wire [14:0] CW;
+    
     reg [4:0] FS_int = 0;
+    reg MW_int = 0;
+    reg [5:0] SH_int = 0;
 
 
     
@@ -38,23 +41,26 @@ module DOF(
 	);
     
     
-    
+    assign CU = (CS && IM[14]) ? 
+                {17'h1FFFF, IM} : {17'b0, IM};
+
     //assign IM = IR[14:0];    
     always @ (negedge clk) begin
         if(!reset) begin
             PC_n2 = PC_n1;
-            {RW, MD, BS, PS, MW, FS_int, MB, MA, CS} <= CW; 
+            {RW, MD, BS, PS, MW_int, FS_int, MB, MA, CS} <= CW; 
             {DA, AA, BA} = IR[24:10]; //DA/SA/SB
             IM = IR[14:0];
-            SH = IR[4:0];
+            SH_int <= IR[5:0];
             //padding out IM to 32 bits based on CS
-            CU = (CS && IM[14]) ? 
-                {17'h1FFFF, IM} : {17'b0, IM};
+            
             
             BUS_A = (MA) ? PC_n1 : A; //finished
             BUS_B = (MB) ? CU : B; //finished
             
             FS <= FS_int;
+            MW <= MW_int;
+            SH <= SH_int;
             
         end else begin
             PC_n2 = 0;

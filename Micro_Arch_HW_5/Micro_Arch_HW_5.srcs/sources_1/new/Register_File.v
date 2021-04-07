@@ -22,9 +22,14 @@ module Register_File(
 	   
 	   //constant arithmetic registers for ALU testing
 	   registers[1] = 4;
-	   registers[2] = -1;
+	   registers[2] = -5;
 	   registers[3] = 1001;
 	   registers[4] = -4350;
+	   registers[7] = 5'b10101;
+	   registers[8] = 5'b01110;
+	   registers[10] = 500;
+	   registers[15] = 70;
+	   
 	end
 	
 	assign A = registers[AA];
