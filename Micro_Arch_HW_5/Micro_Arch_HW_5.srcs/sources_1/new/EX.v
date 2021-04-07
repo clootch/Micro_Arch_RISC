@@ -70,7 +70,7 @@ module EX(
             RWo = RW;
             DAo = DA;
             MDo = MD;
-            NV = V ^ N;
+            NV = V_i ^ N_i;
             F = F_i;
             {Z, V, N, C} = {Z_i, V_i, N_i, C_i};
             data_out = data_out_i;
