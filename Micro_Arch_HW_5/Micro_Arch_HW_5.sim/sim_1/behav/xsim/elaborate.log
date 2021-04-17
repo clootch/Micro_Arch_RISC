@@ -6,23 +6,4 @@ Starting static elaboration
 Pass Through NonSizing Optimizer
 WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 5 for port 'SH' [G:/Dev/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sources_1/new/EX.v:59]
 Completed static elaboration
-Starting simulation data flow analysis
-WARNING: [XSIM 43-4099] "G:/Dev/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sources_1/new/Function_Unit.v" Line 1. Module Function_Unit doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "G:/Dev/Micro_Arch_RISC/Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sources_1/new/Function_Unit.v" Line 1. Module Function_Unit doesn't have a timescale but at least one module in design has a timescale.
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.Register_File
-Compiling module xil_defaultlib.Instruction_Memory
-Compiling module xil_defaultlib.IF
-Compiling module xil_defaultlib.Instruction_Decoder
-Compiling module xil_defaultlib.DOF
-Compiling module xil_defaultlib.Adder
-Compiling module xil_defaultlib.Memory
-Compiling module xil_defaultlib.Shifter
-Compiling module xil_defaultlib.Function_Unit
-Compiling module xil_defaultlib.EX
-Compiling module xil_defaultlib.WB
-Compiling module xil_defaultlib.RISC_Machine
-Compiling module xil_defaultlib.RISC_Machine_TB
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot RISC_Machine_TB_behav
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
