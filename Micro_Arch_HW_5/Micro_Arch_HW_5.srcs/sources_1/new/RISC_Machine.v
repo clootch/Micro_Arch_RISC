@@ -3,7 +3,6 @@
 module RISC_Machine(
         input reset
     );
-    
     reg clk;
     
     //declarations for Register File
@@ -21,7 +20,6 @@ module RISC_Machine(
         .A(top_A),
         .B(top_B)
     );
-    
     
     //declarations for IF
     wire [31:0] top_PC_n1,top_IR;    

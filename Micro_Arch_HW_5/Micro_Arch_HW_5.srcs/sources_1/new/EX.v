@@ -27,16 +27,12 @@ module EX(
     );
     
     wire N, V, C, Z_i;
-    //reg N, V, C;
-    
-    
+
     initial begin
         {RWo, DAo, MDo} = 0;
     end
     
     assign RAA = Bus_A;
-    //assign BS_out = BS;
-    //assign PS_out = PS;
     
     Adder Adder(
         .B(Bus_B),
@@ -77,11 +73,8 @@ module EX(
             Z = Z_i;
             BS_out = BS;
             PS_out = PS;
-            //NV = V_i ^ N_i;
-            //F = F_i;
-            //{Z, V, N, C} = {Z_i, V_i, N_i, C_i};
         end else begin
-            //do all the reset shit
+            //reset
         end  
     end
     
