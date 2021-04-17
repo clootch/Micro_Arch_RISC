@@ -105,12 +105,12 @@ mov r17, r28
     
     ;compare bottom bit of m
     ani r27, r29, 1
-
     ;if r27 == 0, jmp SKIP_ADD
+    jz SKIP_ADD
     ;else
     add r28, r28, r30
 
-;SKIP ADD
+;SKIP_ADD
     lsl r30, r30, 1
     lsr r29, r29, 1
     jmp MUL_LOOP
