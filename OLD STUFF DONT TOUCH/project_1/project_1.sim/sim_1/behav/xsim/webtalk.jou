@@ -2,8 +2,8 @@
 # Webtalk v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Tue Apr  6 23:33:50 2021
-# Process ID: 20652
+# Start of session at: Sun Apr 18 18:02:45 2021
+# Process ID: 17628
 # Current directory: D:/Github Repos/Micro_Arch_RISC/OLD STUFF DONT TOUCH/project_1/project_1.sim/sim_1/behav/xsim
 # Command line: wbtcv.exe -mode batch -source D:/Github Repos/Micro_Arch_RISC/OLD STUFF DONT TOUCH/project_1/project_1.sim/sim_1/behav/xsim/xsim.dir/RISC_Machine_TB_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: D:/Github Repos/Micro_Arch_RISC/OLD STUFF DONT TOUCH/project_1/project_1.sim/sim_1/behav/xsim/webtalk.log

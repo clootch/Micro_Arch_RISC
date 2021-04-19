@@ -19,6 +19,8 @@ verilog xil_defaultlib  \
 "../../../../../../Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sim_1/new/Adder_TB.v" \
 "../../../../../../Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sim_1/new/IF_TB.v" \
 "../../../../../../Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sim_1/new/WB_TB.v" \
+"../../../../../../Micro_Arch_HW_5/Micro_Arch_HW_5.srcs/sim_1/new/EX_TB.v" \
+"../../../../project_1.srcs/sim_1/new/RISC_Machine_TB.v" \
 
 # compile glbl module
 verilog xil_defaultlib "glbl.v"

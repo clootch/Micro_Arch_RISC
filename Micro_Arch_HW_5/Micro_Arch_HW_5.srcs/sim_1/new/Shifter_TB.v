@@ -14,7 +14,7 @@ module Shifter_TB();
     
     initial begin
         direction = 2'b10; //left 
-        SH = 6'd3; //3 bits
+        SH = 6'd6; //3 bits
         A = 5'b10000; //input
         #10; //wait :D
         A = 32'b11111111111111111111110001; //bigboi num
