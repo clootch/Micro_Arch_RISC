@@ -45,8 +45,8 @@ adi r23, r0, 1
 lsl r23, r23, 31
 
 ;store signs
-and r5, r1, r18 ;IM limited to 14 bits
-and r6, r2, r18
+and r5, r1, r23 ;IM limited to 14 bits
+and r6, r2, r23
 
 ;calculate final sign
 xor r7, r5, r6
