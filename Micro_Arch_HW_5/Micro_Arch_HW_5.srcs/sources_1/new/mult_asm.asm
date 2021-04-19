@@ -182,8 +182,8 @@ and r15, r13, r15
 add r4, r4, r16
 add r3, r15, r3
 
-;add sign :D
-add r3, r3, r7
+;add sign :D WRONG, TWOS COMPL
+;add r3, r3, r7
 
 ;MUL_LOOP 😊😊😊
 
