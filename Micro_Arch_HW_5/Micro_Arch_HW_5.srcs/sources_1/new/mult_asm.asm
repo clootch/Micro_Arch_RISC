@@ -23,7 +23,7 @@
 ; reg[21] = Checker for special Add Case
 ; reg[22] = Checker for special Add Case
 ; reg[23] = single bit mask
-; reg[24] = empty
+; reg[24] = MUL_LOOP PC 
 ; reg[25] = empty
 ; reg[26] = empty
 ; reg[27] = working reg
@@ -38,44 +38,44 @@
 adi r1, r0, A 
 adi r2, r0, B 
 
+adi r24, r0, IM ;MUL_LOOP PC
+
 ;set single bit mask
 adi r23, r0, 1
 lsl r23, r23, 31
 
 ;store signs
 and r5, r1, r18 ;IM limited to 14 bits
-lsr r5, r5, 31
 and r6, r2, r18
-lsr r6, r6, 31
 
 ;calculate final sign
 xor r7, r5, r6
 
 ;set word mask
-adi r12, r0, {16'b0, 16'b1111111111111111} ;needs to be changed 
-adi r13, r0, {16'b1111111111111111, 16'b0}
-;Special Work Mask for Adding numbers together
-adi r20, r0, 16'b0100000000000000 
+;adi r12, r0, {16'b0, 16'b1111111111111111} ;needs to be changed
+adi r12, r0, 14'b11111111111111 
+lsl r12, r12, 2
+adi r12, r0, 2'b11
+;set hi mask
+lsl r13, r12, 16
+
 
 ;Two's Complement any negatives
+;==============================
 
-;we wanna come back lol, we can also use Jump and Link
-adi r14, r0, [THIS LINE_1]
-BZ r5(SA), se IM ;check B sign
+bz r5(SA), se IM ;check B sign
 
 ;Two's Comp of A
-NOT r1, r1
-ADI r1, r1, 1
-jmr r14 //absolute jump
+not r1, r1
+adi r1, r1, 1
 
-;we wanna come back lol
-adi r14, r0, [THIS LINE_1]
-BZ r6(SA), se IM ;Skip compl 
+bz r6(SA), se IM ;Skip compl 
 
 ;Two's Comp of B
 NOT r2, r2 
 ADI r2, r2, 1
-jmr r14 //absolute jump
+
+;==============================
 
 ;calc PQRS
 and r8, r1, r13  ; P (Higher half of A)
@@ -94,7 +94,7 @@ mov r30, r11
 adi r14, r0, [THIS LINE_1]
 
 ;go to loop
-jmp MUL_LOOP ;RELATIVE jump
+jmr r14 ;RELATIVE jump
 
 ;move Q*S to r15
 mov r4, r28
@@ -109,10 +109,10 @@ mov r29, r8
 mov r30, r10
 
 ;we wanna come back lol
-adi r14, r0, [THIS LINE+1]
+adi r14, r0, [THIS LINE+1] ;nop after jmr
 
 ;go to loop
-jmp MUL_LOOP
+jmr r24
 
 ;move P*R to r16
 mov r3, r28
@@ -137,7 +137,7 @@ mov r30, r11
 adi r14, r0, [THIS LINE+1]
 
 ;go to loop
-jmp MUL_LOOP
+jmr r24
 
 ;move P*S to r17
 mov r17, r28
@@ -154,7 +154,7 @@ mov r30, r10
 adi r14, r0, [THIS LINE+1]
 
 ;go to loop
-jmp MUL_LOOP
+jmr r24
 
 ;move P*S to r17
 mov r18, r28
@@ -163,7 +163,7 @@ mov r18, r28
 
 ;combine PS and QR
 ;PS+QR
-add r16, r17, r18 ;CAN OVERFLOW
+add r16, r17, r18 ;CAN OVERFLOW (if C add 1 to presign r3)
 
 ;add SPQR to "purple"
 add r15, r16, r15
@@ -182,6 +182,9 @@ and r15, r13, r15
 add r4, r4, r16
 add r3, r15, r3
 
+;add sign :D
+add r3, r3, r7
+
 ;MUL_LOOP 😊😊😊
 
 ;r31 = count
@@ -190,51 +193,24 @@ add r3, r15, r3
 ;r28 = product
 
     ;if m empty, yeet
-    add r0, r29, r0
-    jz STORE_VAL
+    jz r29;RELATIVE STORE_VAL
     
     ;compare bottom bit of m
     ani r27, r29, 1
-
     ;if r27 == 0, jmp SKIP_ADD
+    jz r27 ;SKIP_ADD
+    
     ;else
     add r28, r28, r30
 
 ;SKIP ADD
     lsl r30, r30, 1
     lsr r29, r29, 1
-    jmp MUL_LOOP
+    jmr r24
     
 ;STORE_VAL
     jmr r14
 	
 	
 ;Special Land :)
-
-
-
-;MUL_LOOP 😊😊😊
-
-;r31 = count lol jk
-;r29 = m
-;r30 = n
-;r28 = product
-
-    ;if m empty, yeet
-    add r0, r29, r0
-    jz STORE_VAL
-    
-    ;compare bottom bit of m
-    ani r27, r29, 1
-    ;if r27 == 0, jmp SKIP_ADD
-    jz SKIP_ADD
-    ;else
-    add r28, r28, r30
-
-;SKIP_ADD
-    lsl r30, r30, 1
-    lsr r29, r29, 1
-    jmp MUL_LOOP
-    
-;STORE_VAL
-    jmr r14
+💩😒🤞🤣🤞😁🍌💕🤷‍♀️🎉😶😣😋😥👱‍♂️🧓🤴🍠🧇
