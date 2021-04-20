@@ -20,9 +20,9 @@ module Register_File(
 	     registers[i] = 0;
 	   end
 	   
-	   //constant arithmetic registers for ALU testing
-	   registers[1] = 32'b01100101001001001010011011101110;
-	   registers[2] = 32'b01100101001001001010011011101110;
+	   //constant arithmetic registers for ALU testing32'b01100101001001001010011011101110
+	   registers[1] = 4;
+	   registers[2] = 5;
 	   registers[3] = 1001;
 	   registers[4] = -4350;
 	   registers[7] = 5'b10101;

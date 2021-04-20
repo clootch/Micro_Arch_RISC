@@ -126,7 +126,7 @@ and r15, r4, r13
 lsr r15, r15, 16
 ;clone bottom of P*R into new reg top
 and r25, r3, r12
-lsr r25, r25, 16
+lsl r25, r25, 16
 ;combine bottom of P*R and top of Q*S
 add r15, r25, r15
 
@@ -174,6 +174,7 @@ add r15, r16, r15
 
 ;low half purple into working reg with 0s
 and r16, r12, r15 
+lsl r16, r16, 16
 
 ;clear space in final reg
 and r3, r13, r3
@@ -181,13 +182,31 @@ and r4, r12, r4
 
 ;high half purple into working reg with 0s
 and r15, r13, r15
-
+lsr r15, r15, 16
 ;move parts into final position
-add r4, r4, r15
-add r3, r16, r3
+add r3, r3, r15
+add r4, r16, r4
 
-;add sign :D WRONG, TWOS COMPL
-;add r3, r3, r7
+;add sign :D 
+;is sign positive
+bz r7 NARNIA
+
+;r4 is 0?
+bz r4
+
+;bit flip, add one
+not r4, r4
+add r4, r4, 1
+not r3, r3
+jmp NARNIA
+
+;r4 is all 0, but we need to 2s compl
+not r3, r3
+add r3, r3, 1
+
+;NARNIA
+jmp here
+
 
 ;MUL_LOOP 😊😊😊
 
