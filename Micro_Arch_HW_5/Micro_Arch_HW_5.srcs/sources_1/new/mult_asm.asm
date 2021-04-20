@@ -24,7 +24,7 @@
 ; reg[22] = Checker for special Add Case
 ; reg[23] = single bit mask
 ; reg[24] = MUL_LOOP PC 
-; reg[25] = empty
+; reg[25] = working reg
 ; reg[26] = empty
 ; reg[27] = working reg
 ; reg[28] = working reg
@@ -82,7 +82,7 @@ and r8, r1, r13  ; P (Higher half of A)
 lsr r8, r8, 16;
 and r9, r1, r12  ; Q (Lower half of A)
 and r10, r2, r13 ; R (Higher half of B)
-lsr r10, r10, 16;
+lsr r10, r10, 16;F
 and r11, r2, r12 ; S (Lower half of B)
 
 ;===============
@@ -123,10 +123,12 @@ mov r3, r28
 ;new reg for intermed: r15
 ;clone top of Q*S into new reg bottom
 and r15, r4, r13
+lsr r15, r15, 16
 ;clone bottom of P*R into new reg top
-and r8, r3, r12
+and r25, r3, r12
+lsr r25, r25, 16
 ;combine bottom of P*R and top of Q*S
-add r15, r8, r15
+add r15, r25, r15
 
 ;=====================
 
@@ -174,15 +176,15 @@ add r15, r16, r15
 and r16, r12, r15 
 
 ;clear space in final reg
-and r3, r12, r3
-and r4, r13, r4
+and r3, r13, r3
+and r4, r12, r4
 
 ;high half purple into working reg with 0s
 and r15, r13, r15
 
 ;move parts into final position
-add r4, r4, r16
-add r3, r15, r3
+add r4, r4, r15
+add r3, r16, r3
 
 ;add sign :D WRONG, TWOS COMPL
 ;add r3, r3, r7
