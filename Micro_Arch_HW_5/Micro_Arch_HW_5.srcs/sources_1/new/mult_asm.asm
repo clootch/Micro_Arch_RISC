@@ -196,7 +196,7 @@ bz r4
 
 ;bit flip, add one
 not r4, r4
-add r4, r4, 1
+adi r4, r4, 1
 not r3, r3
 jmp NARNIA
 
