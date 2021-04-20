@@ -94,7 +94,7 @@ mov r30, r11
 adi r14, r0, [THIS LINE_1]
 
 ;go to loop
-jmr r14 ;RELATIVE jump
+jmr r24 ;RELATIVE jump
 
 ;move Q*S to r15
 mov r4, r28

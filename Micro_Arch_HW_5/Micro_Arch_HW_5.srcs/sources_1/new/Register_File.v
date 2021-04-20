@@ -29,6 +29,7 @@ module Register_File(
 	   registers[8] = 5'b01110;
 	   registers[10] = 500;
 	   registers[15] = 70;
+	   registers[24] = 156;
 	   
 	end
 	

@@ -19,7 +19,8 @@ module EX(
     output [31:0] data_out, //Output from Memory
     output [31:0] F, //To WB
     output NV, //XOR of N and V
-    output reg Z = 0,
+    //output reg Z = 0,
+    output Z,
     output [31:0] BrA, //Output to Mux C
     output [31:0] RAA,
     output reg [1:0] BS_out = 0,
@@ -54,7 +55,7 @@ module EX(
         .B(Bus_B),
         .SH(SH),
         .FS(FS),
-        .Z(Z_i),
+        .Z(Z),//Z_i
         .N(N),
         .V(V),
         .C(C),
@@ -70,7 +71,7 @@ module EX(
             RWo = RW;
             DAo = DA;
             MDo = MD;
-            Z = Z_i;
+            //Z = Z_i;
             BS_out = BS;
             PS_out = PS;
         end else begin
