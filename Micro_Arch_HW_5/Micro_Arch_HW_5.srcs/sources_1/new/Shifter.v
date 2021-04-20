@@ -8,11 +8,19 @@ module Shifter(
     );
     always @ (*)
     begin
+        /*
         case(direction)
             2'b00: shiftOut = A;
             2'b01: shiftOut = A;
             2'b10: shiftOut = A>>SH | A<<(32-SH);// RIGHT Shift
             2'b11: shiftOut = A<<SH | A>>(32-SH); // LEFT Shift
+        endcase
+        */
+        case(direction)
+            2'b00: shiftOut = A;
+            2'b01: shiftOut = A;
+            2'b10: shiftOut = A>>SH;// RIGHT Shift
+            2'b11: shiftOut = A<<SH; // LEFT Shift
         endcase
     end
 endmodule

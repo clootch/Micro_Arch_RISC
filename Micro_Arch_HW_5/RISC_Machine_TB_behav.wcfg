@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="698420fs"></ZoomStartTime>
-      <ZoomEndTime time="759721fs"></ZoomEndTime>
-      <Cursor1Time time="294240fs"></Cursor1Time>
+      <ZoomStartTime time="334520fs"></ZoomStartTime>
+      <ZoomEndTime time="498521fs"></ZoomEndTime>
+      <Cursor1Time time="420000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="143"></NameColumnWidth>
-      <ValueColumnWidth column_width="72"></ValueColumnWidth>
+      <ValueColumnWidth column_width="68"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="29" />
+   <WVObjectSize size="26" />
    <wvobject fp_name="/RISC_Machine_TB/reset" type="logic">
       <obj_property name="ElementShortName">reset</obj_property>
       <obj_property name="ObjectShortName">reset</obj_property>
@@ -91,50 +91,6 @@
       <obj_property name="ElementShortName">[500][31:0]</obj_property>
       <obj_property name="ObjectShortName">[500][31:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/RISC_Machine_TB/uut/RF/registers[15]" type="array">
-      <obj_property name="ElementShortName">[15][31:0]</obj_property>
-      <obj_property name="ObjectShortName">[15][31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/RISC_Machine_TB/uut/RF/registers[10]" type="array">
-      <obj_property name="ElementShortName">[10][31:0]</obj_property>
-      <obj_property name="ObjectShortName">[10][31:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/RISC_Machine_TB/uut/RF/registers[9]" type="array">
-      <obj_property name="ElementShortName">[9][31:0]</obj_property>
-      <obj_property name="ObjectShortName">[9][31:0]</obj_property>
-      <obj_property name="Radix">BINARYRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/RISC_Machine_TB/uut/RF/registers[8]" type="array">
-      <obj_property name="ElementShortName">[8][31:0]</obj_property>
-      <obj_property name="ObjectShortName">[8][31:0]</obj_property>
-      <obj_property name="Radix">BINARYRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/RISC_Machine_TB/uut/RF/registers[7]" type="array">
-      <obj_property name="ElementShortName">[7][31:0]</obj_property>
-      <obj_property name="ObjectShortName">[7][31:0]</obj_property>
-      <obj_property name="Radix">BINARYRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/RISC_Machine_TB/uut/RF/registers[5]" type="array">
-      <obj_property name="ElementShortName">[5][31:0]</obj_property>
-      <obj_property name="ObjectShortName">[5][31:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/RISC_Machine_TB/uut/RF/registers[3]" type="array">
-      <obj_property name="ElementShortName">[3][31:0]</obj_property>
-      <obj_property name="ObjectShortName">[3][31:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/RISC_Machine_TB/uut/RF/registers[2]" type="array">
-      <obj_property name="ElementShortName">[2][31:0]</obj_property>
-      <obj_property name="ObjectShortName">[2][31:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/RISC_Machine_TB/uut/RF/registers[1]" type="array">
-      <obj_property name="ElementShortName">[1][31:0]</obj_property>
-      <obj_property name="ObjectShortName">[1][31:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-   </wvobject>
    <wvobject fp_name="/RISC_Machine_TB/uut/WB/DA" type="array">
       <obj_property name="ElementShortName">DA[4:0]</obj_property>
       <obj_property name="ObjectShortName">DA[4:0]</obj_property>
@@ -153,5 +109,162 @@
       <obj_property name="ElementShortName">BrA[31:0]</obj_property>
       <obj_property name="ObjectShortName">BrA[31:0]</obj_property>
       <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC_Machine_TB/uut/RF/registers" type="array">
+      <obj_property name="ElementShortName">registers[31:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">registers[31:0][31:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/RISC_Machine_TB/uut/RF/registers[31]" type="array">
+         <obj_property name="ElementShortName">[31][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[31][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/RISC_Machine_TB/uut/RF/registers[30]" type="array">
+         <obj_property name="ElementShortName">[30][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[30][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/RISC_Machine_TB/uut/RF/registers[29]" type="array">
+         <obj_property name="ElementShortName">[29][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[29][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/RISC_Machine_TB/uut/RF/registers[28]" type="array">
+         <obj_property name="ElementShortName">[28][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[28][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/RISC_Machine_TB/uut/RF/registers[27]" type="array">
+         <obj_property name="ElementShortName">[27][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[27][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/RISC_Machine_TB/uut/RF/registers[26]" type="array">
+         <obj_property name="ElementShortName">[26][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[26][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/RISC_Machine_TB/uut/RF/registers[25]" type="array">
+         <obj_property name="ElementShortName">[25][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[25][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/RISC_Machine_TB/uut/RF/registers[24]" type="array">
+         <obj_property name="ElementShortName">[24][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[24][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/RISC_Machine_TB/uut/RF/registers[23]" type="array">
+         <obj_property name="ElementShortName">[23][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[23][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/RISC_Machine_TB/uut/RF/registers[22]" type="array">
+         <obj_property name="ElementShortName">[22][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[22][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/RISC_Machine_TB/uut/RF/registers[21]" type="array">
+         <obj_property name="ElementShortName">[21][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[21][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/RISC_Machine_TB/uut/RF/registers[20]" type="array">
+         <obj_property name="ElementShortName">[20][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[20][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/RISC_Machine_TB/uut/RF/registers[19]" type="array">
+         <obj_property name="ElementShortName">[19][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[19][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/RISC_Machine_TB/uut/RF/registers[18]" type="array">
+         <obj_property name="ElementShortName">[18][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[18][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/RISC_Machine_TB/uut/RF/registers[17]" type="array">
+         <obj_property name="ElementShortName">[17][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[17][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/RISC_Machine_TB/uut/RF/registers[16]" type="array">
+         <obj_property name="ElementShortName">[16][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[16][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/RISC_Machine_TB/uut/RF/registers[15]" type="array">
+         <obj_property name="ElementShortName">[15][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[15][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/RISC_Machine_TB/uut/RF/registers[14]" type="array">
+         <obj_property name="ElementShortName">[14][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[14][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/RISC_Machine_TB/uut/RF/registers[13]" type="array">
+         <obj_property name="ElementShortName">[13][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[13][31:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/RISC_Machine_TB/uut/RF/registers[12]" type="array">
+         <obj_property name="ElementShortName">[12][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[12][31:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/RISC_Machine_TB/uut/RF/registers[11]" type="array">
+         <obj_property name="ElementShortName">[11][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[11][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/RISC_Machine_TB/uut/RF/registers[10]" type="array">
+         <obj_property name="ElementShortName">[10][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[10][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/RISC_Machine_TB/uut/RF/registers[9]" type="array">
+         <obj_property name="ElementShortName">[9][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[9][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/RISC_Machine_TB/uut/RF/registers[8]" type="array">
+         <obj_property name="ElementShortName">[8][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[8][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/RISC_Machine_TB/uut/RF/registers[7]" type="array">
+         <obj_property name="ElementShortName">[7][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[7][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/RISC_Machine_TB/uut/RF/registers[6]" type="array">
+         <obj_property name="ElementShortName">[6][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[6][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/RISC_Machine_TB/uut/RF/registers[5]" type="array">
+         <obj_property name="ElementShortName">[5][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[5][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/RISC_Machine_TB/uut/RF/registers[4]" type="array">
+         <obj_property name="ElementShortName">[4][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[4][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/RISC_Machine_TB/uut/RF/registers[3]" type="array">
+         <obj_property name="ElementShortName">[3][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[3][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/RISC_Machine_TB/uut/RF/registers[2]" type="array">
+         <obj_property name="ElementShortName">[2][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/RISC_Machine_TB/uut/RF/registers[1]" type="array">
+         <obj_property name="ElementShortName">[1][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][31:0]</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+      </wvobject>
+      <wvobject fp_name="/RISC_Machine_TB/uut/RF/registers[0]" type="array">
+         <obj_property name="ElementShortName">[0][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/RISC_Machine_TB/uut/PC_temp" type="array">
+      <obj_property name="ElementShortName">PC_temp[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC_temp[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC_Machine_TB/uut/top_BS" type="array">
+      <obj_property name="ElementShortName">top_BS[1:0]</obj_property>
+      <obj_property name="ObjectShortName">top_BS[1:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC_Machine_TB/uut/top_PS" type="logic">
+      <obj_property name="ElementShortName">top_PS</obj_property>
+      <obj_property name="ObjectShortName">top_PS</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC_Machine_TB/uut/EX/F" type="array">
+      <obj_property name="ElementShortName">F[31:0]</obj_property>
+      <obj_property name="ObjectShortName">F[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC_Machine_TB/uut/top_Z" type="logic">
+      <obj_property name="ElementShortName">top_Z</obj_property>
+      <obj_property name="ObjectShortName">top_Z</obj_property>
    </wvobject>
 </wave_config>

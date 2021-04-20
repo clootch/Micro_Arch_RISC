@@ -21,15 +21,16 @@ module Register_File(
 	   end
 	   
 	   //constant arithmetic registers for ALU testing
-	   registers[1] = 4;
-	   registers[2] = -5;
+	   registers[1] = 32'b01100101001001001010011011101110;
+	   registers[2] = 32'b01100101001001001010011011101110;
 	   registers[3] = 1001;
 	   registers[4] = -4350;
 	   registers[7] = 5'b10101;
 	   registers[8] = 5'b01110;
 	   registers[10] = 500;
 	   registers[15] = 70;
-	   registers[24] = 156;
+	   registers[24] = 208;
+	   registers[31] = 212;
 	   
 	end
 	

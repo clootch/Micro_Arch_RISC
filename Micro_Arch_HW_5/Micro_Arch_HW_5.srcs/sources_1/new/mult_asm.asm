@@ -79,8 +79,10 @@ ADI r2, r2, 1
 
 ;calc PQRS
 and r8, r1, r13  ; P (Higher half of A)
+lsr r8, r8, 16;
 and r9, r1, r12  ; Q (Lower half of A)
 and r10, r2, r13 ; R (Higher half of B)
+lsr r10, r10, 16;
 and r11, r2, r12 ; S (Lower half of B)
 
 ;===============
